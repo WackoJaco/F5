@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Edit_Template_Checkbox</fullName>
+    <active>true</active>
+    <description>Milestone Template checkbox can't be changed without the User Special Permision.</description>
+    <errorConditionFormula>ISCHANGED( MilestoneTemplate__c ) &amp;&amp;
+NOT(INCLUDES( $User.Special_Permissions__c, 'Milestone_Edit_Template_Chexkbox'))</errorConditionFormula>
+    <errorDisplayField>MilestoneTemplate__c</errorDisplayField>
+    <errorMessage>Milestone Template checkbox can only be modified by a member of the PSA Core team or TS.</errorMessage>
+</ValidationRule>

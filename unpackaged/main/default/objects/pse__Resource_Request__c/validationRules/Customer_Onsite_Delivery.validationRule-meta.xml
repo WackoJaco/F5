@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Onsite_Delivery</fullName>
+    <active>true</active>
+    <description>To check if address is entered when Customer Onsite Delivery is checked</description>
+    <errorConditionFormula>AND(
+$Permission.PSA_Bypass_PROD_Admin =FALSE,/*Allow *F5 - PRODUCTION ADMIN profile*/
+Onsite_Delivery__c = true,
+
+OR(
+ISBLANK(pse__Work_Street_PSA__c),
+ISBLANK(pse__Work_State_PSA__c),
+ISBLANK(pse__Work_Country_PSA__c),
+ISBLANK(pse__Work_City_PSA__c),
+ISBLANK(pse__Work_PostalCode_PSA__c)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Please enter the below Address fields to Processed Further.
+Work Street (PSA),
+Work State/Province (PSA),
+Work Country (PSA),
+Work City (PSA),
+Work Zip/Postal Code (PSA)</errorMessage>
+</ValidationRule>

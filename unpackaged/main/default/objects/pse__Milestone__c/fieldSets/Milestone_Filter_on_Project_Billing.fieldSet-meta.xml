@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Filter_on_Project_Billing</fullName>
+    <description>Used to control Filter Fields available on Project Billing page (generate BE).</description>
+    <displayedFields>
+        <field>Inv_Method__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Milestone Filter on Project Billing</label>
+</FieldSet>

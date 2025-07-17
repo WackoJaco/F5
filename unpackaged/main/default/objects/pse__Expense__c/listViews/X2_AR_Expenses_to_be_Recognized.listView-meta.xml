@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2_AR_Expenses_to_be_Recognized</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND (5 OR 6)</booleanFilter>
+    <columns>Send_to_AR__c</columns>
+    <columns>NAME</columns>
+    <columns>Sales_Order__c</columns>
+    <columns>pse__Expense_Date__c</columns>
+    <columns>Deferred_Expenses_to_be_Recognized__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Exclude_from_Billing__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>pse__Billable__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>pse__Approved__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Send_to_AR__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Revenue_Recognized__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Revenue_Recognized__c</field>
+        <operation>equals</operation>
+        <value>Resubmitted</value>
+    </filters>
+    <label>2. Expenses Released (AR Processing)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APAC</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APAC</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

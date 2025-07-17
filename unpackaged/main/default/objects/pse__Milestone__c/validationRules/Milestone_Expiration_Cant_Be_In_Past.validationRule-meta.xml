@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Expiration_Cant_Be_In_Past</fullName>
+    <active>true</active>
+    <description>Milestone Expiration Date cannot be in the past.  Please update to a date in the future or reach out to TS.</description>
+    <errorConditionFormula>ISCHANGED(Expiration_Date__c) &amp;&amp;
+Expiration_Date__c &lt; TODAY() &amp;&amp;
+$Permission.PSA_Bypass_PROD_Admin =FALSE/*Allow *F5 - PRODUCTION ADMIN profile*/
+&amp;&amp;
+NOT(INCLUDES( $User.Special_Permissions__c, 'Milestone_Edit_Expiration_Date_Past'))</errorConditionFormula>
+    <errorMessage>Milestone Expiration Date cannot be in the past.  Please update to a date in the future or reach out to TS.</errorMessage>
+</ValidationRule>

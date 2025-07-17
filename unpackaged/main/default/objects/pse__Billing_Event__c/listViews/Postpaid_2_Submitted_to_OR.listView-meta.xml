@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Postpaid_2_Submitted_to_OR</fullName>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>Theater__c</columns>
+    <columns>pse__Summary_Amount__c</columns>
+    <columns>NAME</columns>
+    <columns>Assignment__c</columns>
+    <columns>Account__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>Notes__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Stage__c</columns>
+    <columns>Record_Type__c</columns>
+    <columns>Invoice_Method__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Billing_Event__c.OR_OV_BE_Record_Type,pse__Billing_Event__c.Billing_Event</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Submitted to OR</value>
+    </filters>
+    <filters>
+        <field>Invoice_Method__c</field>
+        <operation>equals</operation>
+        <value>Bill on Delivery (postpaid)</value>
+    </filters>
+    <label>Postpaid 2: Submitted to OR</label>
+    <sharedTo>
+        <group>PSA_Revenue_Accounting_OR</group>
+        <group>PSA_Revenue_Accounting_OV</group>
+    </sharedTo>
+</ListView>

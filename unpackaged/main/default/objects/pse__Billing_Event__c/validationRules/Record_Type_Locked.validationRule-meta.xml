@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Type_Locked</fullName>
+    <active>false</active>
+    <description>Record type change can only be made by Admin or Finance.</description>
+    <errorConditionFormula>AND(
+ISCHANGED( Record_Type__c ),
+NOT(ISNEW()),
+NOT( CONTAINS($Profile.Name,"*F5 - PRODUCTION ADMIN")),
+NOT(CONTAINS( $Profile.Name,"*F5 - NA Order Admin *HQ"))
+)</errorConditionFormula>
+    <errorMessage>You do not have permission to change the Record Type</errorMessage>
+</ValidationRule>

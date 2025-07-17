@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Cards_Pending_Mgr_Approval_EMEA1</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>Owner__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Status__c</columns>
+    <columns>pse__Resource__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>pse__Approver__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Project__c</field>
+        <operation>notEqual</operation>
+        <value>Internal Projects,Internal Training,Holiday/PTO,Scoping</value>
+    </filters>
+    <filters>
+        <field>pse__Billable__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>equals</operation>
+        <value>THIS_FISCAL_YEAR</value>
+    </filters>
+    <filters>
+        <field>pse__Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <filters>
+        <field>pse__Approved__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>PS_Consulting_Region__c</field>
+        <operation>equals</operation>
+        <value>JAPAN</value>
+    </filters>
+    <label>Time Cards (Pending Mgr. Approval) JAPAN</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

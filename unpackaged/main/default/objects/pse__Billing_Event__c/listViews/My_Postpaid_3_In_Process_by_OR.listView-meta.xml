@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Postpaid_3_In_Process_by_OR</fullName>
+    <columns>Stage__c</columns>
+    <columns>Assignment__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>Theater__c</columns>
+    <columns>Invoice_Method__c</columns>
+    <columns>pse__Summary_Amount__c</columns>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>Notes__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>pse__Is_Released__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Billing_Event__c.OR_OV_BE_Record_Type</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>In Process by OR</value>
+    </filters>
+    <filters>
+        <field>Invoice_Method__c</field>
+        <operation>equals</operation>
+        <value>Bill on Delivery (postpaid)</value>
+    </filters>
+    <label>My Postpaid 3: In Process by OR</label>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APCJ</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

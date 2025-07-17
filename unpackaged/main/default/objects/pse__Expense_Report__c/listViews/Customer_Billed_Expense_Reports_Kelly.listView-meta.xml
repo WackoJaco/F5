@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Billed_Expense_Reports_Kelly</fullName>
+    <columns>NAME</columns>
+    <columns>pse__Total_Billable_Amount__c</columns>
+    <columns>pse__Total_Reimbursement_Amount__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Owner__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>pse__Resource__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Invoiced__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>pse__Billed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Theater__c</field>
+        <operation>equals</operation>
+        <value>Americas</value>
+    </filters>
+    <label>Customer Billed Expense Reports - Kelly</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Service_Channel_Mgmt_AMER</group>
+    </sharedTo>
+</ListView>

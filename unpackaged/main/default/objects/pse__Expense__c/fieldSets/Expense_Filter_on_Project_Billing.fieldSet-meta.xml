@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expense_Filter_on_Project_Billing</fullName>
+    <description>Expense Filter on Project Billing</description>
+    <displayedFields>
+        <field>Inv_Method__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Expense Filter on Project Billing</label>
+</FieldSet>

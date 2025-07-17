@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Resubmitted_Lock</fullName>
+    <active>true</active>
+    <description>ENH21296 - STRY0022549 - Prevent users outside of NA Order Admin from modifying BE's until Stage is updated to non Rev Ops value.</description>
+    <errorConditionFormula>AND(
+$Permission.PSA_Bypass_PROD_Admin =FALSE,/*Allow *F5 - PRODUCTION ADMIN profile*/
+$Permission.PSA_Bypass_NA_Order_Admin_HQ_profile =FALSE, /*Allow *F5-NA Order Admin HQ profile*/
+NOT(INCLUDES( $User.Special_Permissions__c , 'BE Resubmitted Lockdown - BillingEventVR')),
+OR(
+ISPICKVAL(PRIORVALUE(Stage__c),'Submitted to OR'),
+ISPICKVAL(PRIORVALUE(Stage__c),'In Process by OR'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Submitted to OV'),
+ISPICKVAL(PRIORVALUE(Stage__c),'In Process by OV'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Submitted to AR'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Rejected by AR: Incorrect Rate/Amount'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Rejected by AR: Future-Dated'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Rejected by AR: No Balance Remaining'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Rejected by AR: Other (please describe)')
+),
+OR(
+ISCHANGED( Notes__c ),
+ISCHANGED( pse__Date__c ),
+ISCHANGED( pse__Project__c ), 
+ISCHANGED( pse__Billing_Event_Batch__c ),
+ISCHANGED( pse__Summary_Amount__c ),
+ISCHANGED(  pse__Invoiced__c  ),
+ISCHANGED( pse__Is_Approved__c ),
+ISCHANGED(  pse__Invoice_Number__c  ),
+ISCHANGED(  pse__Invoice_Date__c  ),
+ISCHANGED( Stage__c),
+ISCHANGED(  Validated_by_PS__c )
+)
+)</errorConditionFormula>
+    <errorMessage>Billing event Released/submitted to OR for processing. No changes allowed.</errorMessage>
+</ValidationRule>

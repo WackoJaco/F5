@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Prepaid_2_Submitted_to_AR</fullName>
+    <columns>NAME</columns>
+    <columns>PSA_Version__c</columns>
+    <columns>Invoice_Method__c</columns>
+    <columns>pse__Summary_Amount__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Theater__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>Stage__c</columns>
+    <columns>Notes__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Submitted to AR</value>
+    </filters>
+    <filters>
+        <field>Invoice_Method__c</field>
+        <operation>equals</operation>
+        <value>Bill in Advance (prepaid)</value>
+    </filters>
+    <label>My Prepaid 2: Submitted to AR</label>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APCJ</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

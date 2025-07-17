@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Bill_Type_cannot_be_Billable</fullName>
+    <active>true</active>
+    <description>Prevents the picklist value of Non Billable on a billable expense</description>
+    <errorConditionFormula>AND(ISPICKVAL(pse__Type__c, "Non-billable Expenses"),
+        pse__Billable__c = TRUE)</errorConditionFormula>
+    <errorDisplayField>pse__Billable__c</errorDisplayField>
+    <errorMessage>An expense of the type Non-billable Expenses cannot be marked Billable.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installs_Closed_Sub_Cases</fullName>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>Expiration_Date__c</columns>
+    <columns>Oracle_Subcase_ID__c</columns>
+    <columns>Oracel_Subcase_Closed__c</columns>
+    <columns>pse__Actual_Date__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>NAME</columns>
+    <columns>Sub_Case_Created_Date__c</columns>
+    <columns>pse__Target_Date__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Milestone__c.Installs_Milestone_Fixed_Price</value>
+    </filters>
+    <filters>
+        <field>pse__Actual_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Oracel_Subcase_Closed__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Installs: Closed Sub-Cases</label>
+    <sharedTo>
+        <group>PSA_Project_Mgmt_AMER</group>
+    </sharedTo>
+</ListView>

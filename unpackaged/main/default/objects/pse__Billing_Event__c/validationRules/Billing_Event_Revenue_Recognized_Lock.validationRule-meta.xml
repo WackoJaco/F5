@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Revenue_Recognized_Lock</fullName>
+    <active>false</active>
+    <description>Prevents all but the Users with the Special Permission BE Revenue Recognized - BillingEventVR from selecting the Stage of "Revenue Recognized".</description>
+    <errorConditionFormula>AND(
+     OR(ISPICKVAL(Stage__c, 'Revenue Recognized'),
+       ISPICKVAL(Stage__c, 'Invoiced')),
+NOT(ISCHANGED(Assigned_To__c)),
+NOT(
+     INCLUDES( $User.Special_Permissions__c , 'BE Revenue Recognized_Invoiced - BillingEventVR')))/*Allow users with Special Permission*/</errorConditionFormula>
+    <errorDisplayField>pse__Status__c</errorDisplayField>
+    <errorMessage>"Revenue Recognized" and "Invoiced" Stages can only be set by the Revenue Accounting Team (AR/OR/OV).</errorMessage>
+</ValidationRule>

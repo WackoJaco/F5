@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installs_Non_Billable_Milestones</fullName>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Planned_Hours__c</columns>
+    <columns>pse__Non_Billable_Hours_Submitted__c</columns>
+    <columns>Product_Name__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>pse__Target_Date__c</columns>
+    <columns>pse__Actual_Date__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Milestone__c.NonBillable_Milestone</value>
+    </filters>
+    <filters>
+        <field>Product_Name__c</field>
+        <operation>contains</operation>
+        <value>DEPLOY</value>
+    </filters>
+    <label>Installs: Non-Billable Milestones</label>
+    <sharedTo>
+        <group>PSA_Project_Mgmt_AMER</group>
+    </sharedTo>
+</ListView>

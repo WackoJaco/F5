@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Held_Resource_Request_Requested_Bill_Rat</fullName>
+    <active>false</active>
+    <description>Fires when resource is held, product is T &amp; M and Requested Bill Rate is null or $0.
+ADO249329 - request to deactivate validation rule</description>
+    <errorConditionFormula>AND(
+ pse__Resource_Held__c =TRUE,
+ ISPICKVAL(pse__Opportunity__r.StageName, ' Close - Booked'),
+
+LEN( pse__Project__c ) &gt; 0,
+
+ ISPICKVAL(Product__r.Contract_Type__c , 'Time &amp; Materials'),
+ NOT($Profile.Name   =  "*F5 - PRODUCTION ADMIN"),
+AND(
+
+OR(
+
+ ISBLANK( pse__Requested_Bill_Rate__c ) ,
+ pse__Requested_Bill_Rate__c   &lt;=   0)))</errorConditionFormula>
+    <errorDisplayField>pse__Requested_Bill_Rate__c</errorDisplayField>
+    <errorMessage>Please enter a Requested Bill Rate.</errorMessage>
+</ValidationRule>

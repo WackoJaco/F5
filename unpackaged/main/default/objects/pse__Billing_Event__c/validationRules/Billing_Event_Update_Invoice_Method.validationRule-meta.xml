@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Update_Invoice_Method</fullName>
+    <active>true</active>
+    <description>Update Invoice method when we are submitted to AR / OR</description>
+    <errorConditionFormula>AND(
+$Permission.PSA_Bypass_PROD_Admin =FALSE,/*Allow *F5 - PRODUCTION ADMIN profile*/
+$Permission.PSA_Bypass_PS_Coordinators_profile =TRUE,/*Trigger validation for *F5 - PS coordinator profile users*/
+$Permission.Eng_Consultant_Coordinator_access =TRUE, 
+ISBLANK(TEXT( Invoice_Method__c )),
+
+OR(
+ISPICKVAL( Stage__c,'Submitted to OR'),
+ISPICKVAL( Stage__c,'Submitted to AR')
+)
+)</errorConditionFormula>
+    <errorDisplayField>pse__Is_Approved__c</errorDisplayField>
+    <errorMessage>Please update the Invoice Method Field before submitting to AR or OR</errorMessage>
+</ValidationRule>

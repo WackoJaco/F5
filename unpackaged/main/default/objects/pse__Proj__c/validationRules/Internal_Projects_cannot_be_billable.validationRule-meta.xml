@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Projects_cannot_be_billable</fullName>
+    <active>true</active>
+    <description>Internal Projects cannot be billable</description>
+    <errorConditionFormula>AND(
+ RecordType.Name = "Internal Project",
+ pse__Is_Billable__c = true
+)</errorConditionFormula>
+    <errorDisplayField>pse__Is_Billable__c</errorDisplayField>
+    <errorMessage>Internal Projects cannot be billable</errorMessage>
+</ValidationRule>

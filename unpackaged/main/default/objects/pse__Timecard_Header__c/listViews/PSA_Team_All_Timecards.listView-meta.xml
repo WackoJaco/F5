@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSA_Team_All_Timecards</fullName>
+    <columns>NAME</columns>
+    <columns>pse__Resource__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>pse__Milestone__c</columns>
+    <columns>pse__Start_Date__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>pse__Total_Billable_Amount__c</columns>
+    <columns>pse__Invoiced__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>Owner__c</columns>
+    <columns>pse__Total_Hours__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>PSA Team - All Timecards</label>
+    <sharedTo>
+        <group>PSA_2_0_Project_Cross_Functional_Team</group>
+    </sharedTo>
+</ListView>

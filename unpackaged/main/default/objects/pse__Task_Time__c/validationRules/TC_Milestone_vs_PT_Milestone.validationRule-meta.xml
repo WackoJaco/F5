@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TC_Milestone_vs_PT_Milestone</fullName>
+    <active>true</active>
+    <description>Activate if the timecard milestone selected should be the same as project task milestone</description>
+    <errorConditionFormula>IF( ISBLANK( pse__Timecard__r.pse__Milestone__c ), 
+    false, 
+    pse__Project_Task__r.pse__Milestone__c &lt;&gt;  pse__Timecard__r.pse__Milestone__c
+)</errorConditionFormula>
+    <errorMessage>Project Task Milestone does not match the Timecard Milestone. Please enter Project Task time under the same Milestone as the Project Task Milestone.</errorMessage>
+</ValidationRule>

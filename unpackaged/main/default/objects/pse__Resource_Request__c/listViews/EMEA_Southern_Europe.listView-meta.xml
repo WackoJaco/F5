@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMEA_Southern_Europe</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>pse__Region__c</columns>
+    <columns>Theater__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>pse__Opportunity__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Theater__c</field>
+        <operation>equals</operation>
+        <value>EMEA</value>
+    </filters>
+    <filters>
+        <field>pse__Region__c</field>
+        <operation>equals</operation>
+        <value>France,Italy,Spain,Israel</value>
+    </filters>
+    <label>EMEA: Southern Europe</label>
+    <sharedTo>
+        <group>PSA_Consultants</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EMEA_Regions</fullName>
+    <columns>NAME</columns>
+    <columns>pse__Parent_Region__c</columns>
+    <columns>Theater__c</columns>
+    <columns>pse__Region_Head__c</columns>
+    <columns>pse__Default_Work_Calendar__c</columns>
+    <columns>Sales_Hold_Approver__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Theater__c</field>
+        <operation>equals</operation>
+        <value>EMEA</value>
+    </filters>
+    <label>EMEA Regions</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Super_Admin_Mel_only</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KT_view</fullName>
+    <columns>NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>pse__Project__c</columns>
+    <columns>pse__Resource__c</columns>
+    <columns>pse__Total_Hours__c</columns>
+    <columns>pse__Start_Date__c</columns>
+    <columns>pse__End_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Resource__c</field>
+        <operation>contains</operation>
+        <value>Makoto Tamaoki</value>
+    </filters>
+    <filters>
+        <field>pse__Start_Date__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>11/5/2024</value>
+    </filters>
+    <label>KT view</label>
+</ListView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Projects_Americas</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>PSA_Version__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Stage__c</columns>
+    <columns>pse__Project_Status__c</columns>
+    <columns>pse__Project_Status_Notes__c</columns>
+    <columns>Reason_Code__c</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Start_Date__c</columns>
+    <columns>pse__End_Date__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>pse__Planned_Hours__c</columns>
+    <columns>pse__Total_Assigned_Hours__c</columns>
+    <columns>Total_Billable_Hours__c</columns>
+    <columns>Total_Hours_Remaining__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Theater__c</field>
+        <operation>equals</operation>
+        <value>Americas</value>
+    </filters>
+    <filters>
+        <field>pse__Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Proj__c.Billable_Project</value>
+    </filters>
+    <filters>
+        <field>pse__Project_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer Project</value>
+    </filters>
+    <filters>
+        <field>pse__Stage__c</field>
+        <operation>equals</operation>
+        <value>Initialized,In Progress,On Hold</value>
+    </filters>
+    <filters>
+        <field>PSA_Version__c</field>
+        <operation>equals</operation>
+        <value>PSA 1.0</value>
+    </filters>
+    <label>PSA 1.0 Active Projects</label>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APCJ</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

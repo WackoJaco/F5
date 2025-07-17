@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assignment_Start_Not_Before_Proj_Start</fullName>
+    <active>true</active>
+    <description>Assignment Start Date should not be before the Project Start Date.</description>
+    <errorConditionFormula>AND(
+pse__Schedule__r.pse__Start_Date__c &lt;  pse__Project__r.pse__Start_Date__c,
+ CONTAINS(pse__Project__r.pse__Region__r.Name, "Federal"))</errorConditionFormula>
+    <errorMessage>Assignment Start Date should not be before the Project Start Date.</errorMessage>
+</ValidationRule>

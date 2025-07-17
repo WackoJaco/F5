@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Milestones_Mass_Update_by_SO</fullName>
+    <columns>NAME</columns>
+    <columns>pse__Milestone_Amount__c</columns>
+    <columns>Sales_Price__c</columns>
+    <columns>pse__Planned_Hours__c</columns>
+    <columns>Zero_Dollar_NSP__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>pse__Target_Date__c</columns>
+    <columns>pse__Actual_Date__c</columns>
+    <columns>Product_Name__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Milestone__c.Billing_Milestone</value>
+    </filters>
+    <filters>
+        <field>pse__Project__c</field>
+        <operation>notContain</operation>
+        <value>Template</value>
+    </filters>
+    <filters>
+        <field>Sales_Order_Number__c</field>
+        <operation>equals</operation>
+        <value>2053711</value>
+    </filters>
+    <label>Mass Update:  Fixed Price</label>
+    <sharedTo>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

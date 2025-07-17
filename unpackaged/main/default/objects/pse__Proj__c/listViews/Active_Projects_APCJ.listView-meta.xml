@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Projects_APCJ</fullName>
+    <columns>PSA_Version__c</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Project_Manager__c</columns>
+    <columns>pse__Stage__c</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Start_Date__c</columns>
+    <columns>pse__End_Date__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Theater__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Project_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer Project</value>
+    </filters>
+    <filters>
+        <field>pse__Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Proj__c.Billable_Project</value>
+    </filters>
+    <filters>
+        <field>Theater__c</field>
+        <operation>equals</operation>
+        <value>APCJ</value>
+    </filters>
+    <filters>
+        <field>pse__Stage__c</field>
+        <operation>equals</operation>
+        <value>Initialized,Planning,In Progress,On Hold</value>
+    </filters>
+    <label>Active Projects: APCJ</label>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_APAC</group>
+        <group>PSA_Project_Mgmt_APAC</group>
+        <group>PSA_Senior_Mgmt_Director_VP_APCJ</group>
+    </sharedTo>
+</ListView>

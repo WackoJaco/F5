@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incorrect_Project_Manager_Contact</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISNULL(pse__Project_Manager__c)),
+ISCHANGED(pse__Project_Manager__c),  pse__Project_Manager__r.pse__Salesforce_User__c  = NULL
+)</errorConditionFormula>
+    <errorDisplayField>pse__Project_Manager__c</errorDisplayField>
+    <errorMessage>This is not a valid resource contact record for the Project Manager.  Please select another one.</errorMessage>
+</ValidationRule>

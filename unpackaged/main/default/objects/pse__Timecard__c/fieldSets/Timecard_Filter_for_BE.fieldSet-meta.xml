@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Timecard_Filter_for_BE</fullName>
+    <description>Project Billing UI</description>
+    <label>Timecard Filter for BE</label>
+</FieldSet>

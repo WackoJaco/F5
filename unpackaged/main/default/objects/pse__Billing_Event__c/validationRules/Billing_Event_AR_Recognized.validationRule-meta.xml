@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_AR_Recognized</fullName>
+    <active>true</active>
+    <description>Used when we update the stage from Revenue Recognized to Oracle PSA Reconciled</description>
+    <errorConditionFormula>AND(
+
+$Permission.PSA_Bypass_PROD_Admin =FALSE,/*Allow *F5 - PRODUCTION ADMIN profile*/
+ $Permission.PSA_Bypass_PS_Coordinators_profile =TRUE, /*Trigger the validation for PS Coordinators profile users only*/
+/*NOT(INCLUDES( $User.Special_Permissions__c , 'BE Resubmitted Lockdown - BillingEventVR')),Allow users with Special Permission*/
+$Permission.Eng_Consultant_Coordinator_access =FALSE, /*Allow coordinator/consultant users with Special custom Permission*/
+ISPICKVAL(PRIORVALUE(Stage__c),'Revenue Recognized'),
+ISPICKVAL((Stage__c),'Oracle PSA Reconciled'),
+
+OR(
+ISBLANK(Revenue_Recognition_Date__c),
+Validated_by_PS__c=FALSE
+)
+
+)</errorConditionFormula>
+    <errorMessage>Revenue Recognized Date and Validated by PS fields are required for Oracle/PSA Reconciled stage.</errorMessage>
+</ValidationRule>

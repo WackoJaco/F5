@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Weekly_Mobile_Time_Entry_Fields</fullName>
+    <description>Mobile Time Entry</description>
+    <displayedFields>
+        <field>Onsite__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Weekly Mobile Time Entry Fields</label>
+</FieldSet>

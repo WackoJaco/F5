@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Rejected_Allow</fullName>
+    <active>true</active>
+    <description>ENH21296 - STRY0022548 - Rejected Billing Events shall be capable of modification for PS Coordinators user profile, *F5-NA Order Admin *HQ user profile, and PSA Operation permission set of user only for Processed by OR &amp; Notes fields</description>
+    <errorConditionFormula>AND(
+
+$Permission.PSA_Bypass_NA_Order_Admin_HQ_profile =FALSE, /*Allow *F5-NA Order Admin HQ profile*/
+$Permission.PSA_Bypass_PROD_Admin =FALSE,/*Allow *F5 - PRODUCTION ADMIN profile*/
+$Permission.PSA_Bypass_PS_Coordinators_profile =FALSE, /*Allow F5 - PS Coordinators*/
+$Permission.Eng_Consultant_Coordinator_access =FALSE, /*Allow coordinator/consultant users with Special custom Permission*/
+NOT(INCLUDES( $User.Special_Permissions__c , 'BE Resubmitted Lockdown - BillingEventVR')),/*Allow users with Special Permission*/
+
+OR( 
+ISPICKVAL(PRIORVALUE(Stage__c),'Reject by OR - SKU'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Reject by OR - QTY'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Reject by OR - Unit Price'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Reject by OR - Order closed'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Reject by OR - Other (Please Enter Reason)')
+),
+
+OR(
+ISCHANGED( pse__Date__c ),
+ISCHANGED( pse__Project__c ), 
+ISCHANGED( pse__Billing_Event_Batch__c ),
+ISCHANGED( pse__Summary_Amount__c ),
+ISCHANGED( pse__Invoiced__c  ),
+ISCHANGED( pse__Is_Approved__c  ),
+ISCHANGED( Sales_Order_Number__c  ),
+ISCHANGED( OwnerId  ),
+ISCHANGED( pse__Invoice_Number__c  ),
+ISCHANGED( pse__Invoice_Date__c  ),
+ISCHANGED( Validated_by_PS__c  )
+))</errorConditionFormula>
+    <errorMessage>Billing event rejected. No changes allowed except for Stage and Notes fields.</errorMessage>
+</ValidationRule>

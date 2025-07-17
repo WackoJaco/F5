@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OraclePSA_Reconciled_PS_Ops_Prepaid</fullName>
+    <active>true</active>
+    <description>PSA 2.0 114/20 - Adding validation rule for Prepaid requiring Validatied by PS box to be checked when changing stage to Oracle PSA Reconciled.</description>
+    <errorConditionFormula>AND( 
+    ISPICKVAL(Stage__c, 'Oracle PSA Reconciled'),
+    ISPICKVAL( Invoice_Method__c ,'Prepaid'),
+    Validated_by_PS__c=FALSE
+)</errorConditionFormula>
+    <errorMessage>Validated by PS field is required for Oracle/PSA Reconciled stage.</errorMessage>
+</ValidationRule>

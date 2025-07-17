@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Global_Internal_Projects</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>pse__Stage__c</columns>
+    <columns>pse__End_Date__c</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Group__c</columns>
+    <columns>pse__Time_Excluded__c</columns>
+    <columns>pse__Time_Credited__c</columns>
+    <columns>pse__Allow_Self_Staffing__c</columns>
+    <columns>pse__Allow_Timecards_Without_Assignment__c</columns>
+    <columns>pse__Daily_Timecard_Notes_Required__c</columns>
+    <columns>pse__Closed_for_Time_Entry__c</columns>
+    <columns>pse__Exclude_from_Project_Planner__c</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>pse__Project_Type__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Proj__c.Billable_Project,pse__Proj__c.Customer_Project,pse__Proj__c.Time_Excluded_Project,pse__Proj__c.Time_Credited_Project</value>
+    </filters>
+    <filters>
+        <field>pse__Region__c</field>
+        <operation>equals</operation>
+        <value>Global Rollup,EMEA,Project Mgmt Office</value>
+    </filters>
+    <filters>
+        <field>pse__Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>PSA 2.0</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>FY',CY'</value>
+    </filters>
+    <label>Global/Internal Projects: Active</label>
+    <sharedTo>
+        <group>PSA_Technical_Team</group>
+    </sharedTo>
+</ListView>

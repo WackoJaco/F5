@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Invoiced_Lock</fullName>
+    <active>true</active>
+    <description>Invoiced billing events locked for NA Order Admin.</description>
+    <errorConditionFormula>IF(
+AND(
+$Permission.PSA_Bypass_PROD_Admin =FALSE, /*Allow *F5 - PRODUCTION ADMIN profile*/
+$Permission.PSA_Bypass_PS_Coordinators_profile =FALSE, /*Allow F5 - PS Coordinators*/
+NOT(INCLUDES( $User.Special_Permissions__c , 'BE Revenue Recognized_Invoiced - BillingEventVR')),/*Allow users with Special Permission*/
+$Permission.Eng_Consultant_Coordinator_access =FALSE, /*Allow coordinator/consultant users with Special custom Permission*/
+pse__Invoiced__c = TRUE
+), TRUE,
+IF(
+AND(
+$Permission.PSA_Bypass_PROD_Admin =FALSE, /*Allow *F5 - PRODUCTION ADMIN profile*/
+NOT(INCLUDES( $User.Special_Permissions__c , 'BE Revenue Recognized_Invoiced - BillingEventVR')),/*Allow users with Special Permission*/
+OR(
+ISPICKVAL(PRIORVALUE(Stage__c),'Invoiced'),
+ISPICKVAL(PRIORVALUE(Stage__c),'Revenue Recognized')
+),/*Stage was previously Invoiced*/
+ISCHANGED(Stage__c),
+NOT(ISPICKVAL(Stage__c, 'Oracle PSA Reconciled'))),/*Stage can only be set to Invoiced*/
+TRUE, FALSE)
+)</errorConditionFormula>
+    <errorDisplayField>pse__Is_Approved__c</errorDisplayField>
+    <errorMessage>Only PS Coordinators can edit an invoiced Billing Event.  Stage can only be updated to Oracle PSA Reconciled.</errorMessage>
+</ValidationRule>

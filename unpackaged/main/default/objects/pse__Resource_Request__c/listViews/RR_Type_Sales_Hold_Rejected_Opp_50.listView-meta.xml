@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RR_Type_Sales_Hold_Rejected_Opp_50</fullName>
+    <columns>NAME</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Resource_Request_Name__c</columns>
+    <columns>Resource_Request_Type__c</columns>
+    <columns>Sales_Hold_Approved__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>pse__Opportunity_Probability__c</columns>
+    <columns>SOW_Status__c</columns>
+    <columns>pse__Resource_Role__c</columns>
+    <columns>pse__Staffer_Resource__c</columns>
+    <columns>pse__SOW_Hours__c</columns>
+    <columns>pse__Opportunity__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Resource_Request_Type__c</field>
+        <operation>equals</operation>
+        <value>Sales Hold</value>
+    </filters>
+    <filters>
+        <field>pse__Opportunity_Probability__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>50</value>
+    </filters>
+    <filters>
+        <field>Sales_Hold_Approved__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>RR Type = Sales Hold Rejected, Opp &gt; 50%</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Reconciled_Lock</fullName>
+    <active>true</active>
+    <description>Prevents billing event from being edited after stage is Oracle/PSA Reconciled.  Can only be set to Invoiced from Reconciled by PS Coordinators as Billing_Event_Invoiced_Lock VR prevents Rev Ops from editing BE after Stage is Invoiced.</description>
+    <errorConditionFormula>AND(
+    ISCHANGED(Stage__c),
+    TEXT(PRIORVALUE(Stage__c)) = 'Oracle PSA Reconciled',
+    NOT(ISPICKVAL(Stage__c, 'Invoiced')),
+$Permission.Eng_Consultant_Coordinator_access =FALSE, /*Allow coordinator/consultant users with Special custom Permission*/
+    $Permission.PSA_Bypass_PROD_Admin =FALSE,/*Allow *F5 - PRODUCTION ADMIN profile*/
+NOT(
+INCLUDES( $User.Special_Permissions__c , 'BE Event Reconciled - BillingEventVR')))/*Allow users with Special Permission*/</errorConditionFormula>
+    <errorMessage>You cannot edit a Reconciled Billing Event.  Please open a ServiceNow TS Ticket for Salesforce - PSA assistance in editing this record.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allow_Self_Assignment_to_True</fullName>
+    <active>true</active>
+    <description>Only Prod Admins and Users with the Allow Self-Staffing Special Permission can set the Allow Self-Staffing checkbox to True.</description>
+    <errorConditionFormula>OR(
+
+AND(
+NOT(INCLUDES( $User.Special_Permissions__c , 'Project Allow Self-Staffing to True')),
+pse__Allow_Self_Staffing__c=TRUE,
+ISNEW()
+),
+
+AND(
+NOT(INCLUDES( $User.Special_Permissions__c , 'Project Allow Self-Staffing to True')),
+NOT(ISNEW()),
+ISCHANGED( pse__Allow_Self_Staffing__c )
+)
+)</errorConditionFormula>
+    <errorDisplayField>pse__Allow_Self_Staffing__c</errorDisplayField>
+    <errorMessage>You do not have Permission to change the value.</errorMessage>
+</ValidationRule>

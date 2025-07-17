@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>F5_Product_Required_TM_Milestones</fullName>
+    <active>false</active>
+    <description>F5 Product field is required for T&amp;M Milestones</description>
+    <errorConditionFormula>AND(
+ISNEW (), 
+pse__Milestone__r.RecordType.DeveloperName = "Task_Milestone",
+ISPICKVAL( F5_Product__c, "")
+)</errorConditionFormula>
+    <errorMessage>You must select a value for F5 Product for T&amp;M Milestones.</errorMessage>
+</ValidationRule>

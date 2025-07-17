@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Edit_Billed_Approved_Timecards</fullName>
+    <active>true</active>
+    <description>Approved/Submitted/Billed TImecards cannot be Edited</description>
+    <errorConditionFormula>OR(
+AND(
+pse__Include_In_Financials__c =True,
+NOT(INCLUDES( $User.Special_Permissions__c , 'Edit/Approved Timecards')),
+pse__Billable__c =True,
+OR(
+ISPICKVAL(pse__Status__c, "Approved"),
+ISPICKVAL(pse__Status__c, "Submitted")
+),
+OR(
+ISCHANGED( pse__Milestone__c ),
+ISCHANGED( pse__Project__c ),
+ISCHANGED( pse__Assignment__c ),
+ISCHANGED( pse__Resource__c )
+)),
+
+AND(
+NOT(INCLUDES( $User.Special_Permissions__c , 'Edit/Approved Timecards')),
+pse__Include_In_Financials__c =True,
+pse__Billable__c =True,
+pse__Billed__c =True,
+pse__Invoiced__c =True,
+
+OR(
+ISCHANGED( pse__Bill_Rate__c  ),
+ISCHANGED( Sold_Bill_Rate__c  )
+))
+)</errorConditionFormula>
+    <errorMessage>You cannot these fields on Approved/Submitted/billed Timecards</errorMessage>
+</ValidationRule>

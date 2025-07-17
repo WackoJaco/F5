@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>T_E_Entry_practice_All</fullName>
+    <columns>NAME</columns>
+    <columns>Permission_Control_Type__c</columns>
+    <columns>PSA_Resource_Contact__c</columns>
+    <columns>pse__User__c</columns>
+    <columns>PSA_User_Role__c</columns>
+    <columns>Department_PSA__c</columns>
+    <columns>Business_Unit_PSA__c</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Practice__c</columns>
+    <columns>pse__Cascading_Permission__c</columns>
+    <columns>pse__Timecard_Entry__c</columns>
+    <columns>pse__Expense_Entry__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Permission_Control_Type__c</field>
+        <operation>equals</operation>
+        <value>T&amp;E Entry (Practice)</value>
+    </filters>
+    <filters>
+        <field>pse__Practice__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>T&amp;E Entry (practice) All</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Super_Admin_Mel_only</group>
+    </sharedTo>
+</ListView>

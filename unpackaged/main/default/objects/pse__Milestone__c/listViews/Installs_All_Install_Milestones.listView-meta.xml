@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Installs_All_Install_Milestones</fullName>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>Expiration_Date__c</columns>
+    <columns>Oracle_Subcase_ID__c</columns>
+    <columns>Oracel_Subcase_Closed__c</columns>
+    <columns>pse__Actual_Date__c</columns>
+    <columns>pse__Status__c</columns>
+    <columns>NAME</columns>
+    <columns>Sub_Case_Created_Date__c</columns>
+    <columns>pse__Target_Date__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Milestone__c.Installs_Milestone_Fixed_Price</value>
+    </filters>
+    <label>Installs: All Install Milestones</label>
+    <sharedTo>
+        <group>PSA_Project_Mgmt_AMER</group>
+    </sharedTo>
+</ListView>

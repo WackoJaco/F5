@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSA_RR_Type_Rule_1</fullName>
+    <active>true</active>
+    <description>When an Opportunity is associated to the resource request - 
+The Resource Request cannot be saved when the Opp Prob % is less than 90 and the Type = 'Delivery'</description>
+    <errorConditionFormula>AND(
+ISPICKVAL(Resource_Request_Type__c ,'Delivery'),
+pse__Opportunity__r.Probability &lt; 0.90,
+NOT(ISBLANK(pse__Opportunity__c )))
+
+&amp;&amp;$Permission.PSA_Bypass_PROD_Admin =FALSE/*Allow *F5 - PRODUCTION ADMIN profile*/</errorConditionFormula>
+    <errorMessage>The Resource Request cannot be saved when the Opp Prob % is less than 90 and the Type = 'Delivery'</errorMessage>
+</ValidationRule>

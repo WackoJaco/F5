@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Correction_Notes_Required</fullName>
+    <active>true</active>
+    <description>Make Notes field required when Billing Event Stage moves from a Rejected value</description>
+    <errorConditionFormula>AND
+(
+$Permission.PSA_Bypass_NA_Order_Admin_HQ_profile =True, /* Validation to trigger for *F5-NA Order Admin HQ profile users*/
+ISBLANK(Notes__c),
+OR
+( 
+PRIORVALUE(Stage__c)='Rejected by OR: SKU', 
+PRIORVALUE(Stage__c)='Rejected by OR: QTY', 
+PRIORVALUE(Stage__c)='Rejected by OR: Unit Price', 
+PRIORVALUE(Stage__c)='Rejected by OR: Order Closed', 
+PRIORVALUE(Stage__c)='Rejected by OR: Other (please describe)', 
+PRIORVALUE(Stage__c)='Rejected by AR: Incorrect Rate/Amount',
+PRIORVALUE(Stage__c)='Rejected by AR: Future-Dated',
+PRIORVALUE(Stage__c)='Rejected by AR: No Balance Remaining',
+PRIORVALUE(Stage__c)='Rejected by AR: Order Not Invoiced',
+PRIORVALUE(Stage__c)='Rejected by AR: Other (please describe)'
+)
+)
+
+&amp;&amp;$Permission.PSA_Bypass_PROD_Admin =FALSE /*Exclude *F5 - PRODUCTION ADMIN profile*/</errorConditionFormula>
+    <errorMessage>You must enter a description of what you corrected in Notes field</errorMessage>
+</ValidationRule>

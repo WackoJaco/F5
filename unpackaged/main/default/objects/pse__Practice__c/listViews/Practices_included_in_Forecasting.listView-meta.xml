@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Practices_included_in_Forecasting</fullName>
+    <columns>pse__Global_Practice__c</columns>
+    <columns>pse__Parent_Practice__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Include_In_Forecasting__c</columns>
+    <columns>pse__Current_Time_Period__c</columns>
+    <columns>pse__Current_Time_Period_End_Date__c</columns>
+    <columns>pse__Planned_Bookings__c</columns>
+    <columns>pse__Planned_Billings__c</columns>
+    <columns>pse__Planned_Margin__c</columns>
+    <columns>pse__Bookings__c</columns>
+    <columns>pse__Billings__c</columns>
+    <columns>pse__Total_Costs__c</columns>
+    <columns>pse__Margin__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Include_In_Forecasting__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Practices included in Forecasting</label>
+    <language>en_US</language>
+</ListView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Rejected_Notes_Required</fullName>
+    <active>true</active>
+    <description>Make Notes field required if Billing Event is rejected.</description>
+    <errorConditionFormula>AND(
+ISBLANK(Notes__c),
+$Permission.PSA_Bypass_NA_Order_Admin_HQ_profile =TRUE, /*Trigger Only for  *F5-NA Order Admin HQ profile users*/
+OR( 
+ISPICKVAL(Stage__c,'Rejected by OR: SKU'), 
+ISPICKVAL(Stage__c,'Rejected by OR: QTY'), 
+ISPICKVAL(Stage__c,'Rejected by OR: Unit Price'), 
+ISPICKVAL(Stage__c,'Rejected by OR: Order Closed'), 
+ISPICKVAL(Stage__c,'Rejected by OR: Other (please describe)'),
+ISPICKVAL(Stage__c,'Rejected by AR: Incorrect Rate/Amount'),
+ISPICKVAL(Stage__c,'Rejected by AR: Future-Dated'),
+ISPICKVAL(Stage__c,'Rejected by AR: No Balance Remaining'),
+ISPICKVAL(Stage__c,'Rejected by AR: Order Not Invoiced'),
+ISPICKVAL(Stage__c,'Rejected by AR: Other (please describe)')))
+
+&amp;&amp;$Permission.PSA_Bypass_PROD_Admin =FALSE /*Allow *F5 - PRODUCTION ADMIN profile*/</errorConditionFormula>
+    <errorMessage>You must enter a note when Rejecting a Billing Event.</errorMessage>
+</ValidationRule>

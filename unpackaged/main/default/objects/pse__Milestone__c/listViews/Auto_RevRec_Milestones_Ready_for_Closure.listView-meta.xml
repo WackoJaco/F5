@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_RevRec_Milestones_Ready_for_Closure</fullName>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Target_Date__c</columns>
+    <columns>pse__Actual_Date__c</columns>
+    <columns>Product_Name__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Actual_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>pse__Target_Date__c</field>
+        <operation>lessThan</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Milestone__c.Automatic_Rev_Rec</value>
+    </filters>
+    <filters>
+        <field>pse__Project__c</field>
+        <operation>notContain</operation>
+        <value>Template</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Milestone__c.Automatic_Rev_Rec</value>
+    </filters>
+    <label>Auto RevRec Milestones</label>
+</ListView>

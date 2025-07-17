@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Postpaid_Invoiced</fullName>
+    <columns>PSA_Version__c</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>Assignment__c</columns>
+    <columns>pse__Invoice_Number__c</columns>
+    <columns>pse__Invoice_Date__c</columns>
+    <columns>Validated_by_PS__c</columns>
+    <columns>Assigned_To__c</columns>
+    <columns>Stage__c</columns>
+    <columns>pse__Summary_Amount__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>pse__Invoiced__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Billing_Event__c.OR_OV_BE_Record_Type,pse__Billing_Event__c.Billing_Event</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Invoiced</value>
+    </filters>
+    <filters>
+        <field>Invoice_Method__c</field>
+        <operation>equals</operation>
+        <value>Bill on Delivery (postpaid)</value>
+    </filters>
+    <filters>
+        <field>Validated_by_PS__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>PSA_Version__c</field>
+        <operation>equals</operation>
+        <value>psa 2.0</value>
+    </filters>
+    <label>Postpaid 6: Invoiced</label>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APCJ</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

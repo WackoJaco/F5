@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Proj_Date_Greater_than_Assign_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(pse__Schedule__r.pse__End_Date__c &gt; pse__Project__r.pse__End_Date__c,
+ CONTAINS(pse__Project__r.pse__Region__r.Name, "Federal"))</errorConditionFormula>
+    <errorMessage>Assignment (Schedule) End Date must be less than Project End Date</errorMessage>
+</ValidationRule>

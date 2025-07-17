@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X3_Processed_Expenses_AMER_Validating</fullName>
+    <columns>Validated_by_PS__c</columns>
+    <columns>Sales_Order__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>Deferred_Expenses_to_be_Recognized__c</columns>
+    <columns>Recognized_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Expense_Report__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Revenue_Recognized__c</field>
+        <operation>equals</operation>
+        <value>Revenue Recognized</value>
+    </filters>
+    <filters>
+        <field>Validated_by_PS__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Processed Expenses (AMER Validating)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+    </sharedTo>
+</ListView>

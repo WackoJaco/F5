@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BofA_Projects</fullName>
+    <columns>PSA_Version__c</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Project_Manager__c</columns>
+    <columns>pse__Stage__c</columns>
+    <columns>pse__Project_Status__c</columns>
+    <columns>pse__Project_Status_Notes__c</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Start_Date__c</columns>
+    <columns>pse__End_Date__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <columns>OWNER.LAST_NAME</columns>
+    <columns>Theater__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Project_Type__c</field>
+        <operation>equals</operation>
+        <value>Customer Project</value>
+    </filters>
+    <filters>
+        <field>pse__Is_Active__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Proj__c.Billable_Project</value>
+    </filters>
+    <filters>
+        <field>Theater__c</field>
+        <operation>equals</operation>
+        <value>Americas</value>
+    </filters>
+    <filters>
+        <field>pse__Stage__c</field>
+        <operation>equals</operation>
+        <value>Initialized,Planning,In Progress,On Hold</value>
+    </filters>
+    <filters>
+        <field>pse__Region__c</field>
+        <operation>equals</operation>
+        <value>Southeast</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>Bank of America</value>
+    </filters>
+    <label>BofA Projects</label>
+    <sharedTo>
+        <group>PSA_PS_Sales_Mgmt_Mgr_Director_AMER</group>
+    </sharedTo>
+</ListView>

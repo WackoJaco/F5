@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_sent</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Stage__c</field>
+        <operation>equals</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>Survey_Status__c</field>
+        <operation>notContain</operation>
+        <value>Survey Sent</value>
+    </filters>
+    <filters>
+        <field>pse__End_Date__c</field>
+        <operation>greaterThan</operation>
+        <value>12/31/2021</value>
+    </filters>
+    <filters>
+        <field>Theater__c</field>
+        <operation>equals</operation>
+        <value>EMEA</value>
+    </filters>
+    <label>EMEA Survey's to be sent</label>
+</ListView>

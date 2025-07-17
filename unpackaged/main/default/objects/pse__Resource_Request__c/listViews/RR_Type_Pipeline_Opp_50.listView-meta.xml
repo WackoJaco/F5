@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RR_Type_Pipeline_Opp_50</fullName>
+    <columns>NAME</columns>
+    <columns>pse__Region__c</columns>
+    <columns>Resource_Request_Type__c</columns>
+    <columns>pse__Resource_Request_Name__c</columns>
+    <columns>pse__Opportunity_Probability__c</columns>
+    <columns>pse__Resource_Role__c</columns>
+    <columns>pse__SOW_Hours__c</columns>
+    <columns>Sales_Hold_Approved__c</columns>
+    <columns>SOW_Status__c</columns>
+    <columns>pse__Opportunity__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>pse__Status__c</columns>
+    <columns>pse__Staffer_Resource__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Resource_Request_Type__c</field>
+        <operation>equals</operation>
+        <value>Pipeline</value>
+    </filters>
+    <filters>
+        <field>pse__Opportunity_Probability__c</field>
+        <operation>lessThan</operation>
+        <value>50</value>
+    </filters>
+    <label>RR Type = Pipeline, Opp &lt; 50%</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Consultants</group>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APCJ</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

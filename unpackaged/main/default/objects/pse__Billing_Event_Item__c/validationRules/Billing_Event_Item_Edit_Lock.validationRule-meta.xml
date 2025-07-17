@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Event_Item_Edit_Lock</fullName>
+    <active>true</active>
+    <description>ENH20813</description>
+    <errorConditionFormula>AND(PRIORVALUE(BE_Edit_Lock__c)='YES',
+
+NOT(INCLUDES( $User.Special_Permissions__c , 'BE Processed Lockdown - BillingEventVR')), 
+
+OR( 
+ISCHANGED(pse__Object_Id__c),
+ISCHANGED(pse__Date__c),
+ISCHANGED(pse__Billing_Event__c),
+ISCHANGED(pse__Project__c),
+ISCHANGED(pse__Category__c),
+ISCHANGED(pse__Description__c),
+ISCHANGED(pse__Billing_Event_Batch__c),
+ISCHANGED(pse__Quantity__c),
+ISCHANGED(pse__Unit_Price__c),
+ISCHANGED(pse__Amount__c),
+ISCHANGED(pse__Subcategory__c)
+
+))</errorConditionFormula>
+    <errorMessage>Billing event processed. No changes allowed.</errorMessage>
+</ValidationRule>

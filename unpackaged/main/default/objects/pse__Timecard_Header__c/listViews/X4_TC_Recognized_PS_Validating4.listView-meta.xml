@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X4_TC_Recognized_PS_Validating4</fullName>
+    <columns>Owner__c</columns>
+    <columns>Recognized_Date__c</columns>
+    <columns>Validated_by_PS__c</columns>
+    <columns>Sales_Order__c</columns>
+    <columns>pse__Start_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Project__c</columns>
+    <columns>SKU__c</columns>
+    <columns>pse__Total_Hours__c</columns>
+    <columns>pse__Bill_Rate__c</columns>
+    <columns>Deferred_Amount_to_be_Recognized__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>pse__Resource__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Revenue_Recognized__c</field>
+        <operation>equals</operation>
+        <value>Revenue Recognized</value>
+    </filters>
+    <filters>
+        <field>Validated_by_PS__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>4. TC Recognized (EMEA Validating)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+    </sharedTo>
+</ListView>

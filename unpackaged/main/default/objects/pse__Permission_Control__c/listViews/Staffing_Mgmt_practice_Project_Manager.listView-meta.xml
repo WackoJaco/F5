@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Staffing_Mgmt_practice_Project_Manager</fullName>
+    <columns>NAME</columns>
+    <columns>Permission_Control_Type__c</columns>
+    <columns>PSA_Resource_Contact__c</columns>
+    <columns>pse__User__c</columns>
+    <columns>PSA_User_Role__c</columns>
+    <columns>Department_PSA__c</columns>
+    <columns>Business_Unit_PSA__c</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Practice__c</columns>
+    <columns>pse__Cascading_Permission__c</columns>
+    <columns>pse__Staffing__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Permission_Control_Type__c</field>
+        <operation>equals</operation>
+        <value>Staffing Mgmt (Practice)</value>
+    </filters>
+    <filters>
+        <field>pse__Practice__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>PSA_User_Role__c</field>
+        <operation>equals</operation>
+        <value>Project Manager</value>
+    </filters>
+    <label>Staffing Mgmt (practice) Project Manager</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Super_Admin_Mel_only</group>
+    </sharedTo>
+</ListView>

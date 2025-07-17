@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RR_Mgmt_practice_Engagement_Consultant</fullName>
+    <columns>NAME</columns>
+    <columns>Permission_Control_Type__c</columns>
+    <columns>PSA_Resource_Contact__c</columns>
+    <columns>pse__User__c</columns>
+    <columns>PSA_User_Role__c</columns>
+    <columns>Job_Profile__c</columns>
+    <columns>pse__Region__c</columns>
+    <columns>pse__Practice__c</columns>
+    <columns>pse__Cascading_Permission__c</columns>
+    <columns>pse__Resource_Request_Entry__c</columns>
+    <columns>pse__Skills_And_Certifications_Entry__c</columns>
+    <columns>pse__Skills_And_Certifications_View__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Permission_Control_Type__c</field>
+        <operation>equals</operation>
+        <value>RR Mgmt (Practice)</value>
+    </filters>
+    <filters>
+        <field>pse__Practice__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Job_Profile__c</field>
+        <operation>equals</operation>
+        <value>Engagement Consultant</value>
+    </filters>
+    <label>RR Mgmt (practice) Engagement Consultant</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PSA_Super_Admin_Mel_only</group>
+    </sharedTo>
+</ListView>

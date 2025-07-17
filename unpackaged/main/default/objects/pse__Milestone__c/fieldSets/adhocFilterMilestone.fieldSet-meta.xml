@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>adhocFilterMilestone</fullName>
+    <description>Indicates whether the Milestones checkbox appears as one of the filters in the Filter section of the Billing Eligible Items related list on the Project Billing and Account Billing pages.</description>
+    <displayedFields>
+        <field>Invoice_Method__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>pse__Invoice_Date__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>adhocFilterMilestone</label>
+</FieldSet>

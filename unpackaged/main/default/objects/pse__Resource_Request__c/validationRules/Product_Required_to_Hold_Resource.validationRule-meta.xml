@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Required_to_Hold_Resource</fullName>
+    <active>true</active>
+    <description>Product field is required to hold resource.</description>
+    <errorConditionFormula>AND(
+NOT(ISNEW()),
+pse__Resource_Held__c =TRUE,
+ISBLANK( Product__c ))</errorConditionFormula>
+    <errorDisplayField>Product__c</errorDisplayField>
+    <errorMessage>You need to select  a Product to Hold Resource.</errorMessage>
+</ValidationRule>

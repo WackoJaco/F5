@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Create_Modify_Miscellaneous_Adjustment</fullName>
+    <active>true</active>
+    <description>Prevents users without the Misc. Adj. Special Permission from creating/modifying a Misc. Adj.</description>
+    <errorConditionFormula>NOT(INCLUDES( $User.Special_Permissions__c, 'Miscellaneous Adjustment - VR'))</errorConditionFormula>
+    <errorMessage>Miscellaneous Adjustments can only be created and modified by the PSA Core team.</errorMessage>
+</ValidationRule>

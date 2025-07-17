@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visas</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>pse__Type__c</columns>
+    <columns>NAME</columns>
+    <columns>pse__Description__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Type__c</field>
+        <operation>equals</operation>
+        <value>Visa</value>
+    </filters>
+    <label>Visas</label>
+    <sharedTo>
+        <group>PSA_Consultants</group>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APCJ</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+        <group>PSA_Technical_Team</group>
+        <group>PSA_Vendor_C_Serv_PM_PC_AMER</group>
+    </sharedTo>
+</ListView>

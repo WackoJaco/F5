@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALL_BEs1</fullName>
+    <columns>NAME</columns>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>Invoice_Method__c</columns>
+    <columns>Stage__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>pse__Summary_Amount__c</columns>
+    <columns>PS_Consulting_Region__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Notes__c</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>notEqual</operation>
+        <value>Oracle PSA Reconciled,Oracle/PSA Reconciled</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2024 12:00 AM</value>
+    </filters>
+    <label>All BEs that have not been Validated</label>
+    <sharedTo>
+        <group>PSA_Consulting_Mgmt_AMER</group>
+        <group>PSA_Consulting_Mgmt_APAC</group>
+        <group>PSA_Consulting_Mgmt_APCJ</group>
+        <group>PSA_Consulting_Mgmt_EMEA</group>
+        <group>PSA_Consulting_Mgmt_JAPAN</group>
+        <group>PSA_PMO_Mgmt_AMER</group>
+        <group>PSA_PMO_Mgmt_APCJ</group>
+        <group>PSA_PMO_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_AMER</group>
+        <group>PSA_Project_Mgmt_APAC</group>
+        <group>PSA_Project_Mgmt_APCJ</group>
+        <group>PSA_Project_Mgmt_EMEA</group>
+        <group>PSA_Project_Mgmt_JAPAN</group>
+    </sharedTo>
+</ListView>

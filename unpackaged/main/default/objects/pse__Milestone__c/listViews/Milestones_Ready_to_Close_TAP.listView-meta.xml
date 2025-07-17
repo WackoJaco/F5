@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestones_Ready_to_Close_TAP</fullName>
+    <columns>Sales_Order_Number__c</columns>
+    <columns>pse__Project__c</columns>
+    <columns>NAME</columns>
+    <columns>Product_Name__c</columns>
+    <columns>pse__Target_Date__c</columns>
+    <columns>pse__Planned_Hours__c</columns>
+    <columns>pse__Billable_Hours_In_Financials__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__Actual_Date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>pse__Status__c</field>
+        <operation>equals</operation>
+        <value>In Progress</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>pse__Milestone__c.Billing_Milestone</value>
+    </filters>
+    <filters>
+        <field>Product_Description__c</field>
+        <operation>contains</operation>
+        <value>Trusted</value>
+    </filters>
+    <filters>
+        <field>pse__Billable_Hours_In_Financials__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>Milestones Ready to Close - TAP</label>
+    <sharedTo />
+</ListView>

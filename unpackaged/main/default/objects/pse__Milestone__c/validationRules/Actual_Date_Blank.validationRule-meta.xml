@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Date_Blank</fullName>
+    <active>true</active>
+    <description>The actual date should be populated if the status is set to Work Completed.</description>
+    <errorConditionFormula>AND(
+ISBLANK(pse__Actual_Date__c ),
+NOT(INCLUDES($User.Special_Permissions__c, "Actual Date Blank on Milestone")),
+TEXT( pse__Status__c)="Work Completed")</errorConditionFormula>
+    <errorMessage>The actual date should be populated if the status is set to Work Completed.</errorMessage>
+</ValidationRule>
