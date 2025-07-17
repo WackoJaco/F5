@@ -5,7 +5,6 @@
     <inlineHelpText>Track the stage in the project life cycle</inlineHelpText>
     <label>Stage</label>
     <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

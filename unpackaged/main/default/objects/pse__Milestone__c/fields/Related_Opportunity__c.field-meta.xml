@@ -2,13 +2,13 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Related_Opportunity__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <description>ADO 269310 Lift and Shift PSA Prod to GTM</description>
     <inlineHelpText>Related Sales Opportunity for which the Resource's time was spent on Scoping Activities.</inlineHelpText>
     <label>Related Opportunity</label>
     <referenceTo>Opportunity</referenceTo>
     <relationshipLabel>Milestones</relationshipLabel>
     <relationshipName>Milestones</relationshipName>
     <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>

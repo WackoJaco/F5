@@ -5,7 +5,6 @@
     <inlineHelpText>Upload of Expiring Comments or Variable Contract End Date from deferred report and variable tab</inlineHelpText>
     <label>Expiring Comment</label>
     <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>TextArea</type>

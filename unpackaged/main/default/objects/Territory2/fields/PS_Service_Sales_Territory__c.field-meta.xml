@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PS_Service_Sales_Territory__c</fullName>
+    <description>ENH14616 Used by PRODUCTION ADMINS only. This field maps the PS Service Sales Territory to a Product Territory. It is used as criteria on the NA NSP Approval Workflow for criteria on the PS Service Sales steps.
+IT3113649 - Changed label to PS Sales Territory</description>
+    <label>PS Sales Territory</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AMER: PS - East/Canada</fullName>
+                <default>false</default>
+                <label>AMER: PS - East/Canada</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 1</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 1</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 10</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 10</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 11</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 11</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 12</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 12</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 14</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 14</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 15</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 15</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 16</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 16</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 2</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 2</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 3</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 3</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 4</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 4</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 5</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 5</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 6</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 6</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 7</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 7</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 8</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 8</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales 9</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales 9</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - Service Sales District</fullName>
+                <default>false</default>
+                <label>AMER: PS - Service Sales District</label>
+            </value>
+            <value>
+                <fullName>AMER: PS - West/LATAM</fullName>
+                <default>false</default>
+                <label>AMER: PS - West/LATAM</label>
+            </value>
+            <value>
+                <fullName>APAC: PS</fullName>
+                <default>false</default>
+                <label>APAC: PS</label>
+            </value>
+            <value>
+                <fullName>APAC: PS ASEAN and India</fullName>
+                <default>false</default>
+                <label>APAC: PS ASEAN and India</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Australia</fullName>
+                <default>false</default>
+                <label>APAC: PS Australia</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Australia &amp; New Zealand</fullName>
+                <default>false</default>
+                <label>APAC: PS Australia &amp; New Zealand</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Australia 3</fullName>
+                <default>false</default>
+                <label>APAC: PS Australia 3</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Australia CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Australia CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Australia ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Australia ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Hong Kong</fullName>
+                <default>false</default>
+                <label>APAC: PS Hong Kong</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Hong Kong CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Hong Kong CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Hong Kong ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Hong Kong ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS India 1</fullName>
+                <default>false</default>
+                <label>APAC: PS India 1</label>
+            </value>
+            <value>
+                <fullName>APAC: PS India 2</fullName>
+                <default>false</default>
+                <label>APAC: PS India 2</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Indonesia</fullName>
+                <default>false</default>
+                <label>APAC: PS Indonesia</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Indonesia CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Indonesia CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Indonesia ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Indonesia ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Korea</fullName>
+                <default>false</default>
+                <label>APAC: PS Korea</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Malaysia</fullName>
+                <default>false</default>
+                <label>APAC: PS Malaysia</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Malaysia CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Malaysia CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Malaysia ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Malaysia ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS New Zealand</fullName>
+                <default>false</default>
+                <label>APAC: PS New Zealand</label>
+            </value>
+            <value>
+                <fullName>APAC: PS New Zealand 3</fullName>
+                <default>false</default>
+                <label>APAC: PS New Zealand 3</label>
+            </value>
+            <value>
+                <fullName>APAC: PS New Zealand CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS New Zealand CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS New Zealand ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS New Zealand ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Pakistan CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Pakistan CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Pakistan ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Pakistan ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Philippines</fullName>
+                <default>false</default>
+                <label>APAC: PS Philippines</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Philippines CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Philippines CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Philippines ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Philippines ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS PRC China</fullName>
+                <default>false</default>
+                <label>APAC: PS PRC China</label>
+            </value>
+            <value>
+                <fullName>APAC: PS PRC China 1</fullName>
+                <default>false</default>
+                <label>APAC: PS PRC China 1</label>
+            </value>
+            <value>
+                <fullName>APAC: PS PRC China 2</fullName>
+                <default>false</default>
+                <label>APAC: PS PRC China 2</label>
+            </value>
+            <value>
+                <fullName>APAC: PS RoASEAN CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS RoASEAN CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS RoASEAN ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS RoASEAN ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Singapore</fullName>
+                <default>false</default>
+                <label>APAC: PS Singapore</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Singapore CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Singapore CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Singapore ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Singapore ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Sri Lanka 1</fullName>
+                <default>false</default>
+                <label>APAC: PS Sri Lanka 1</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Taiwan</fullName>
+                <default>false</default>
+                <label>APAC: PS Taiwan</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Taiwan CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Taiwan CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Taiwan ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Taiwan ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Thailand</fullName>
+                <default>false</default>
+                <label>APAC: PS Thailand</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Thailand CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Thailand CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Thailand ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Thailand ENT</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Vietnam</fullName>
+                <default>false</default>
+                <label>APAC: PS Vietnam</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Vietnam CSP</fullName>
+                <default>false</default>
+                <label>APAC: PS Vietnam CSP</label>
+            </value>
+            <value>
+                <fullName>APAC: PS Vietnam ENT</fullName>
+                <default>false</default>
+                <label>APAC: PS Vietnam ENT</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS DACH 1</fullName>
+                <default>false</default>
+                <label>EMEA: PS DACH 1</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS DACH Telco</fullName>
+                <default>false</default>
+                <label>EMEA: PS DACH Telco</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS MEA 1</fullName>
+                <default>false</default>
+                <label>EMEA: PS MEA 1</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS MEA Telco</fullName>
+                <default>false</default>
+                <label>EMEA: PS MEA Telco</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS NE 1</fullName>
+                <default>false</default>
+                <label>EMEA: PS NE 1</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS NE Telco</fullName>
+                <default>false</default>
+                <label>EMEA: PS NE Telco</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS North Eastern 1</fullName>
+                <default>false</default>
+                <label>EMEA: PS North Eastern 1</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS Sales</fullName>
+                <default>false</default>
+                <label>EMEA: PS Sales</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS Service Providers</fullName>
+                <default>false</default>
+                <label>EMEA: PS Service Providers</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS Service Providers 1</fullName>
+                <default>false</default>
+                <label>EMEA: PS Service Providers 1</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS Southern 1</fullName>
+                <default>false</default>
+                <label>EMEA: PS Southern 1</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS Southern Telco</fullName>
+                <default>false</default>
+                <label>EMEA: PS Southern Telco</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS UKI 1</fullName>
+                <default>false</default>
+                <label>EMEA: PS UKI 1</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS UKI 1 Telco</fullName>
+                <default>false</default>
+                <label>EMEA: PS UKI 1 Telco</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS UKI 2</fullName>
+                <default>false</default>
+                <label>EMEA: PS UKI 2</label>
+            </value>
+            <value>
+                <fullName>EMEA: PS UKI 2 Telco</fullName>
+                <default>false</default>
+                <label>EMEA: PS UKI 2 Telco</label>
+            </value>
+            <value>
+                <fullName>JAPAN: PS</fullName>
+                <default>false</default>
+                <label>JAPAN: PS</label>
+            </value>
+            <value>
+                <fullName>JAPAN: PS Japan 1</fullName>
+                <default>false</default>
+                <label>JAPAN: PS Japan 1</label>
+            </value>
+            <value>
+                <fullName>JAPAN: PS Japan CSP</fullName>
+                <default>false</default>
+                <label>JAPAN: PS Japan CSP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

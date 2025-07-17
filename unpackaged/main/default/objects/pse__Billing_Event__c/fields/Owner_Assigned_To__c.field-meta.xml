@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Owner_Assigned_To__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA Prod to GTM</description>
     <formula>OwnerId &lt;&gt;  Assigned_To__r.Id</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Owner&lt;&gt;Assigned To</label>

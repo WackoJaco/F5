@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Expiration_Date__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA Prod to GTM</description>
     <inlineHelpText>Populate with last day of Quarter in which the Prepaid or $0 NSP Order will expire, per Deferred Report.
 For Installs, refer to AR 'Install Open &amp; Close' Report &gt; Actual Ship Date (column M) and add 90 days to Actual Ship Date.
 Example: If Actual Ship Date is 01/01/2023 +90 Days = 04/01/2023.</inlineHelpText>
     <label>Expiration Date</label>
     <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Date</type>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Description__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA Prod to GTM</description>
     <inlineHelpText>Practices are used to identify place of Employment/Company for External Billable Consulting resources. 
 Titles in WorkDay: 
 -V (appended to Employee Last Name)

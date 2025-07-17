@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Owner_PS_Sales_Text__c</fullName>
+    <description>To use with workflow field update so Opportunity can be updated without hitting reference object limits</description>
+    <externalId>false</externalId>
+    <label>Owner: PS Sales Text</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -4,7 +4,6 @@
     <description>This field captures the Billed date when the BE is set to Released by the flow.</description>
     <label>Billed date</label>
     <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Date</type>

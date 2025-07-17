@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOW_Status__c</fullName>
+    <label>SOW Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A - Training</fullName>
+                <default>false</default>
+                <label>N/A - Training</label>
+            </value>
+            <value>
+                <fullName>Not Applicable to Project</fullName>
+                <default>false</default>
+                <label>Not Applicable to Project</label>
+            </value>
+            <value>
+                <fullName>New</fullName>
+                <default>false</default>
+                <label>New</label>
+            </value>
+            <value>
+                <fullName>Scope Call Request</fullName>
+                <default>false</default>
+                <label>Scope Call Request</label>
+            </value>
+            <value>
+                <fullName>Scope Cal Complete</fullName>
+                <default>false</default>
+                <label>Scope Cal Complete</label>
+            </value>
+            <value>
+                <fullName>Estimating</fullName>
+                <default>false</default>
+                <label>Estimating</label>
+            </value>
+            <value>
+                <fullName>Estimating Complete</fullName>
+                <default>false</default>
+                <label>Estimating Complete</label>
+            </value>
+            <value>
+                <fullName>Generating SOW</fullName>
+                <default>false</default>
+                <label>Generating SOW</label>
+            </value>
+            <value>
+                <fullName>Draft SOW Review</fullName>
+                <default>false</default>
+                <label>Draft SOW Review</label>
+            </value>
+            <value>
+                <fullName>Legal Review</fullName>
+                <default>false</default>
+                <label>Legal Review</label>
+            </value>
+            <value>
+                <fullName>Sent to Partner/Customer</fullName>
+                <default>false</default>
+                <label>Sent to Partner/Customer</label>
+            </value>
+            <value>
+                <fullName>Signed/Executed SOW</fullName>
+                <default>false</default>
+                <label>Signed/Executed SOW</label>
+            </value>
+            <value>
+                <fullName>Change Order Request (COR)</fullName>
+                <default>false</default>
+                <label>Change Order Request (COR)</label>
+            </value>
+            <value>
+                <fullName>Signed/Executed (COR)</fullName>
+                <default>false</default>
+                <label>Signed/Executed (COR)</label>
+            </value>
+            <value>
+                <fullName>Customer Delay</fullName>
+                <default>false</default>
+                <label>Customer Delay</label>
+            </value>
+            <value>
+                <fullName>Customer Cancelled</fullName>
+                <default>false</default>
+                <label>Customer Cancelled</label>
+            </value>
+            <value>
+                <fullName>Act of Acceptance Pending</fullName>
+                <default>false</default>
+                <label>Act of Acceptance Pending</label>
+            </value>
+            <value>
+                <fullName>Act of Acceptance Completed</fullName>
+                <default>false</default>
+                <label>Act of Acceptance Completed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

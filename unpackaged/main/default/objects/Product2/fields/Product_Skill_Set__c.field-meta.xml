@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Skill_Set__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup to Skill Set Object. See alternate option called 'Skill Set Required' Field, which is a multi-select picklist. Remove one of these after finalizing which field works best.</description>
+    <inlineHelpText>Lookup to Skill Set Object. See alternate option called 'Skill Set Required' Field, which is a multi-select picklist. Remove one of these after finalizing which field works best.</inlineHelpText>
+    <label>Product Skill Set</label>
+    <referenceTo>pse__Skill_Set__c</referenceTo>
+    <relationshipLabel>Products</relationshipLabel>
+    <relationshipName>Products</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

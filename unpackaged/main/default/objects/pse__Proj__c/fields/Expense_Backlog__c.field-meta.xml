@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Expense_Backlog__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA</description>
     <formula>pse__Expense_Budget__c - pse__Pass_Through_Billings__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Expense Backlog</label>

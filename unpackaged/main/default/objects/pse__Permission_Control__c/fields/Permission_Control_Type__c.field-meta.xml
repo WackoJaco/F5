@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Permission_Control_Type__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA Prod to GTM</description>
     <inlineHelpText>Stand-alone or cascading Permissions granted to PSA Users. Controlled by Region, Practice, Group, Project, or Resource. Select Permission aligning to functional access being extended. Create additional records for each controlling Object and/or Function.</inlineHelpText>
     <label>Permission Control Type</label>
     <required>false</required>

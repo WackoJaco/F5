@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Time_Entry_Guidance__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA</description>
     <inlineHelpText>Provides guidance on determining Internal/Global Project selection when submitting time for Non-Customer facing, Non-Billable work.</inlineHelpText>
     <label>Time Entry Guidance</label>
     <length>32768</length>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>LongTextArea</type>

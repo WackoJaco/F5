@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Project_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select the current project status from the picklist. Alternatively, use Process Builder or workflow rules to use your own logic to control the behavior of the corresponding color indicator field.</description>
+    <inlineHelpText>Select the current project status from the picklist. Alternatively, use Process Builder or workflow rules to use your own logic to control the behavior of the corresponding color indicator field.</inlineHelpText>
+    <label>Project Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Green</fullName>
+                <default>false</default>
+                <label>Green</label>
+            </value>
+            <value>
+                <fullName>Yellow</fullName>
+                <default>false</default>
+                <label>Yellow</label>
+            </value>
+            <value>
+                <fullName>Red</fullName>
+                <default>false</default>
+                <label>Red</label>
+            </value>
+            <value>
+                <fullName>Contingent Delivery</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Contingent Delivery</label>
+            </value>
+            <value>
+                <fullName>Requires Follow-Up</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>Requires Follow-Up</label>
+            </value>
+            <value>
+                <fullName>Pending Closure</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Pending Closure</label>
+            </value>
+            <value>
+                <fullName>Pending Signed SOW</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Pending Signed SOW</label>
+            </value>
+            <value>
+                <fullName>Info Needed</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Info Needed</label>
+            </value>
+            <value>
+                <fullName>New Order</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>New Order</label>
+            </value>
+            <value>
+                <fullName>Awaiting Cx Response</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Awaiting Cx Response</label>
+            </value>
+            <value>
+                <fullName>Scheduling</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Scheduling</label>
+            </value>
+            <value>
+                <fullName>Delivering Long-Term</fullName>
+                <default>false</default>
+                <label>Delivering Long-Term</label>
+            </value>
+            <value>
+                <fullName>Delivering Short-Term</fullName>
+                <default>false</default>
+                <label>Delivering Short-Term</label>
+            </value>
+            <value>
+                <fullName>Remaining Hours to be Scoped</fullName>
+                <default>false</default>
+                <label>Remaining Hours to be Scoped</label>
+            </value>
+            <value>
+                <fullName>Pending Customer Contact</fullName>
+                <default>false</default>
+                <label>Pending Customer Contact</label>
+            </value>
+            <value>
+                <fullName>Final Billing</fullName>
+                <default>false</default>
+                <label>Final Billing</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Awaiting Deferred Recognition</fullName>
+                <default>false</default>
+                <label>Awaiting Deferred Recognition</label>
+            </value>
+            <value>
+                <fullName>Awaiting Sign-off / Closing Report</fullName>
+                <default>false</default>
+                <label>Awaiting Sign-off / Closing Report</label>
+            </value>
+            <value>
+                <fullName>Work at Risk</fullName>
+                <default>false</default>
+                <label>Work at Risk</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

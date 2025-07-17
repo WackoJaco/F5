@@ -5,7 +5,6 @@
     <description>If the field is set to TRUE, the project is excluded from TAP monthly scheduled emails to customers.</description>
     <inlineHelpText>If the field is set to TRUE, the project is excluded from TAP monthly scheduled emails to customers.</inlineHelpText>
     <label>Exclude from TAP Communication</label>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>

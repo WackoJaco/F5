@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Status_Report_Date__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA</description>
     <formula>TODAY()</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Status Report Date</label>

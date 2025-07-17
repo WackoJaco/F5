@@ -2,10 +2,10 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Zero_Dollar_NSP__c</fullName>
     <defaultValue>false</defaultValue>
+    <description>ADO 269310 Lift and Shift PSA Prod to GTM</description>
     <inlineHelpText>Service included at no cost to Customer. If not used in 12 mo. from Order Booked Date, deferred Consulting Rev is reversed and recognized as Product Rev at end of corresponding Qtr.
 When checked, Invoice Method = PrePaid and Rev Expiration = 12 months.</inlineHelpText>
     <label>$0 NSP</label>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Checkbox</type>

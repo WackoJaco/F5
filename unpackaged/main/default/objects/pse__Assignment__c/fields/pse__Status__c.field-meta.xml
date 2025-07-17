@@ -5,7 +5,6 @@
     <inlineHelpText>Status must be set to 'Scheduled' for Assignment to display in list of available Project/Assignments within Time Entry. Billable Resources will be unable to see/submit Time Cards when Assignment Status is 'Tentative', Closed', or 'Canceled'.</inlineHelpText>
     <label>Status</label>
     <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>true</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Picklist</type>

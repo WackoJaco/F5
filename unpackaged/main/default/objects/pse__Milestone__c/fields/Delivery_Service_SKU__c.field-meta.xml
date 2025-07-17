@@ -2,6 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Delivery_Service_SKU__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
+    <description>ADO 269310 Lift and Shift PSA Prod to GTM</description>
     <inlineHelpText>Please add the SKU that is being delivered against the sold product. Use for OASIS and SOW SKUs.</inlineHelpText>
     <label>Delivery Service SKU</label>
     <lookupFilter>
@@ -17,7 +18,6 @@
     <relationshipLabel>Milestones (Delivery Service SKU)</relationshipLabel>
     <relationshipName>Milestones1</relationshipName>
     <required>false</required>
-    <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
     <type>Lookup</type>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Owner_is_Current_User__c</fullName>
+    <description>ADO 269310 Lift and Shift PSA</description>
     <formula>Owner:User.Id = $User.Id</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Owner is Current User</label>

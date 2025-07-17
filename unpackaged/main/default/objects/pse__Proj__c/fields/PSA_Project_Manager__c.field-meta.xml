@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSA_Project_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>ADO 269310 Lift and Shift PSA</description>
+    <inlineHelpText>Project Manager or Project Coordinator.
+Responsible for operational functions on PSA Project such as Customer Engagement Scheduling, Resource Staffing, Assignment Mgmt, and Billing+Rev Rec processing. Modify here to update Field on related pages.</inlineHelpText>
+    <label>PSA Project Manager</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Projects (PSA Project Manager)</relationshipLabel>
+    <relationshipName>PSA_Projects_Managed</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
