@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Recognition_method</name>
+        <label>Assign Recognition method</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.pse__Recognition_Method__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Deliverable</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <description>ADO :228504:: Set recognition method field to Deliverable when reord is created</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>IsChanged</name>
+        <dataType>Boolean</dataType>
+        <expression>ISCHANGED({!$Record.pse__Status__c})</expression>
+    </formulas>
+    <formulas>
+        <name>ISNEW1</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <formulas>
+        <name>NEW</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>PSA -Miscellaneous Adjustment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PSA -Miscellaneous Adjustment</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Assign_Recognition_method</targetReference>
+        </connector>
+        <object>pse__Miscellaneous_Adjustment__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

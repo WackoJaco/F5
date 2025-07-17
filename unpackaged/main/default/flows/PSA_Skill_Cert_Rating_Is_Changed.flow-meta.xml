@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Check_Rating_changed</name>
+        <label>Check Rating changed</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Ratingchanged</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>PSA_Populate_Previous_Rating</targetReference>
+            </connector>
+            <label>Changed?</label>
+        </rules>
+    </decisions>
+    <description>ADO: 164502::Migrated from the: PSA Skill Cert Rating Is Changed workflow rule</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>PSA_Populate_Previous_RatingFormula</name>
+        <dataType>String</dataType>
+        <expression>TEXT(PRIORVALUE($Record.pse__Rating__c))</expression>
+    </formulas>
+    <formulas>
+        <name>Ratingchanged</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT(ISNEW()) &amp;&amp; ISCHANGED({!$Record.pse__Rating__c})</expression>
+    </formulas>
+    <interviewLabel>PSA Skill Cert Rating Is Changed {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PSA-Skill Cert Rating Create &amp; Update</label>
+    <migratedFromWorkflowRuleName>PSA Skill Cert Rating Is Changed</migratedFromWorkflowRuleName>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>PSA_Populate_Previous_Rating</name>
+        <label>PSA Populate Previous Rating</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Previous_Rating__c</field>
+            <value>
+                <elementReference>PSA_Populate_Previous_RatingFormula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Rating_changed</targetReference>
+        </connector>
+        <object>pse__Skill_Certification_Rating__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>assign_country</name>
+        <label>assign country</label>
+        <locationX>765</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>varCountryofResidence</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>get_resource_location.Country_of_Residence__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Assign_full_Country_Name</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_full_Country_Name</name>
+        <label>Assign full Country Name</label>
+        <locationX>765</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>varCountyUpdate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varForCountry</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Get_Project_Location</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Region</name>
+        <label>Assign Region</label>
+        <locationX>765</locationX>
+        <locationY>815</locationY>
+        <assignmentItems>
+            <assignToReference>varProjRegionName</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Project_Location.pse__Region__r.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varTheater</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Get_Project_Location.Theater__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Region_Update</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Region_Update</name>
+        <label>Region Update</label>
+        <locationX>765</locationX>
+        <locationY>935</locationY>
+        <assignmentItems>
+            <assignToReference>varupdatedregion</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varRegionUpdate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Do_they_match</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Countries_in_ANZ_Match</name>
+        <label>Countries in ANZ Match</label>
+        <locationX>1326</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Out_of_Country</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ANZ_Matches</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Australia</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New Zealand</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Delivery_Type_ANZ</targetReference>
+            </connector>
+            <label>ANZ Matches</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Countries_in_APCJ_Match</name>
+        <label>Countries in APCJ Match</label>
+        <locationX>1766</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Out_of_Country</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>APCJ_Matches</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>varAPCJCountries</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Delivery_Type_APCJ</targetReference>
+            </connector>
+            <label>APCJ Matches</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Countries_in_ASEAN_Match</name>
+        <label>Countries in ASEAN Match</label>
+        <locationX>2206</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Out_of_Country</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ASEAN_Matches</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Myanmar</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Indonesia</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Malaysia</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Philippines</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Singapore</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Thailand</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Vietnam</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pakistan</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Delivery_Type_ASEAN</targetReference>
+            </connector>
+            <label>ASEAN Matches</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Countries_in_EMEA_Match</name>
+        <label>Countries in EMEA Match</label>
+        <locationX>886</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Out_of_Country</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>EMEA_Matches</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>varEMEACountries</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Delivery_Type_EMEA</targetReference>
+            </connector>
+            <label>EMEA Matches</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Do_they_match</name>
+        <label>Do they match</label>
+        <locationX>765</locationX>
+        <locationY>1055</locationY>
+        <defaultConnector>
+            <targetReference>Top_level_Regions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not a match</defaultConnectorLabel>
+        <rules>
+            <name>Yes_there_is_a_match</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>varRegionUpdate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Delivery_Type</targetReference>
+            </connector>
+            <label>Yes there is a match</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_the_Resource_Country_Equal_Americas</name>
+        <label>Does the Resource Country Equal Americas</label>
+        <locationX>446</locationX>
+        <locationY>1295</locationY>
+        <defaultConnector>
+            <targetReference>Out_of_Country</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Resource_is_Americas</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varForCountry</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>United States</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Delivery_Type_AMER</targetReference>
+            </connector>
+            <label>Resource is Americas</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Top_level_Regions</name>
+        <label>Top level Regions</label>
+        <locationX>1480</locationX>
+        <locationY>1175</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Americas</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegionUpdate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Americas</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Does_the_Resource_Country_Equal_Americas</targetReference>
+            </connector>
+            <label>Americas</label>
+        </rules>
+        <rules>
+            <name>EMEA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegionUpdate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>EMEA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Countries_in_EMEA_Match</targetReference>
+            </connector>
+            <label>EMEA</label>
+        </rules>
+        <rules>
+            <name>ANZ</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegionUpdate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ANZ</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Countries_in_ANZ_Match</targetReference>
+            </connector>
+            <label>ANZ</label>
+        </rules>
+        <rules>
+            <name>APCJ</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegionUpdate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>APCJ</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Countries_in_APCJ_Match</targetReference>
+            </connector>
+            <label>APCJ</label>
+        </rules>
+        <rules>
+            <name>ASEAN</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>varRegionUpdate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ASEAN</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Countries_in_ASEAN_Match</targetReference>
+            </connector>
+            <label>ASEAN</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>varAPCJCountries</name>
+        <dataType>String</dataType>
+        <expression>CASE({!varForCountry},
+&apos;Japan&apos;,&apos;Japan&apos;,
+&apos;China&apos;,&apos;China&apos;,
+&apos;India&apos;,&apos;India&apos;,
+&apos;Nepal&apos;,&apos;Nepal&apos;,
+&apos;Sri Lanka&apos;,&apos;Sri Lanka&apos;,
+&apos;Hong Kong&apos;,&apos;Hong Kong&apos;,
+&apos;South Korea&apos;,&apos;South Korea&apos;,
+&apos;Taiwan&apos;,&apos;Taiwan&apos;,
+&apos;other&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>varEMEACountries</name>
+        <dataType>String</dataType>
+        <expression>CASE({!varForCountry},
+&apos;Belgium&apos;,&apos;Belgium&apos;,
+&apos;Czech Republic&apos;,&apos;Czech Republic&apos;,
+&apos;Finland&apos;,&apos;Finland&apos;,
+&apos;France&apos;,&apos;France&apos;,
+&apos;Germany&apos;,&apos;Germany&apos;,
+&apos;Ireland&apos;,&apos;Ireland&apos;,
+&apos;Israel&apos;,&apos;Israel&apos;,
+&apos;Italy&apos;,&apos;Italy&apos;,
+&apos;Poland&apos;,&apos;Poland&apos;,
+&apos;Saudi Arabia&apos;,&apos;Saudi Arabia&apos;,
+&apos;South Africa&apos;,&apos;South Africa&apos;,
+&apos;Spain&apos;,&apos;Spain&apos;,
+&apos;Sweden&apos;,&apos;Sweden&apos;,
+&apos;United Arab Emirates&apos;,&apos;United Arab Emirates&apos;,
+&apos;United Kingdom&apos;,&apos;United Kingdom&apos;,
+&apos;other&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>varForCountry</name>
+        <dataType>String</dataType>
+        <expression>CASE({!varCountryofResidence},
+&apos;USA&apos;,&apos;United States&apos;,
+&apos;CAN&apos;,&apos;Canada&apos;,
+&apos;IND&apos;,&apos;India&apos;,
+&apos;BRA&apos;,&apos;Brazil&apos;,
+&apos;AUS&apos;,&apos;Australia&apos;,
+&apos;BDG&apos;,&apos;Bangladesh&apos;,
+&apos;BEL&apos;,&apos;Belgium&apos;,
+&apos;CHN&apos;,&apos;China&apos;,
+&apos;CZE&apos;,&apos;Czech Republic&apos;,
+&apos;FIN&apos;,&apos;Finland&apos;,
+&apos;FRA&apos;,&apos;France&apos;,
+&apos;DEU&apos;,&apos;Germany&apos;,
+&apos;HKG&apos;,&apos;Hong Kong&apos;,
+&apos;IDN&apos;,&apos;Indonesia&apos;,
+&apos;IRL&apos;,&apos;Ireland&apos;,
+&apos;ISR&apos;,&apos;Israel&apos;,
+&apos;ITA&apos;,&apos;Italy&apos;,
+&apos;JPN&apos;,&apos;Japan&apos;,
+&apos;MYS&apos;,&apos;Malaysia&apos;,
+&apos;MEX&apos;,&apos;Mexico&apos;,
+&apos;PHL&apos;,&apos;Philippines&apos;,
+&apos;POL&apos;,&apos;Poland&apos;,
+&apos;SAU&apos;,&apos;Saudi Arabia&apos;,
+&apos;SGP&apos;,&apos;Singapore&apos;,
+&apos;ZAF&apos;,&apos;South Africa&apos;,
+&apos;ESP&apos;,&apos;Spain&apos;,
+&apos;SWE&apos;,&apos;Sweden&apos;,
+&apos;TWN&apos;,&apos;Taiwan&apos;,
+&apos;THA&apos;,&apos;Thailand&apos;,
+&apos;ARE&apos;,&apos;United Arab Emirates&apos;,
+&apos;GBR&apos;,&apos;United Kingdom&apos;,
+&apos;NZL&apos;,&apos;New Zealand&apos;,
+&apos;other&apos;)</expression>
+    </formulas>
+    <formulas>
+        <name>varRegionUpdate</name>
+        <dataType>String</dataType>
+        <expression>CASE({!varProjRegionName},
+&apos;Federal 1&apos;,&apos;United States&apos;,
+&apos;Federal 2&apos;,&apos;United States&apos;,
+&apos;Northeast&apos;,&apos;United States&apos;,
+&apos;Mid-Atlantic&apos;,&apos;United States&apos;,
+&apos;Central&apos;,&apos;United States&apos;,
+&apos;Canada&apos;,&apos;Canada&apos;,
+&apos;Project Mgmt Office&apos;,&apos;United States&apos;,
+&apos;LATAM&apos;,&apos;LATAM&apos;,
+&apos;Northwest&apos;,&apos;United States&apos;,
+&apos;South Central&apos;,&apos;United States&apos;,
+&apos;Southeast&apos;,&apos;United States&apos;,
+&apos;Southwest&apos;,&apos;United States&apos;,
+&apos;Israel&apos;,&apos;Israel&apos;,
+&apos;France&apos;,&apos;France&apos;,
+&apos;Italy&apos;,&apos;Italy&apos;,
+&apos;Spain&apos;,&apos;Spain&apos;,
+&apos;Finland&apos;,&apos;Finland&apos;,
+&apos;Norway&apos;,&apos;Norway&apos;,
+&apos;Poland&apos;,&apos;Poland&apos;,
+&apos;Sweden&apos;,&apos;Sweden&apos;,
+&apos;Saudi Arabia&apos;,&apos;Saudi Arabia&apos;,
+&apos;United Arab Emirates&apos;,&apos;United Arab Emirates&apos;,
+&apos;Sri Lanka&apos;,&apos;Sri Lanka&apos;,
+&apos;Nepal&apos;,&apos;Nepal&apos;,
+&apos;India&apos;,&apos;India&apos;,
+&apos;Bangladesh&apos;,&apos;Bangladesh&apos;,
+&apos;China&apos;,&apos;China&apos;,
+&apos;Hong Kong&apos;,&apos;Hong Kong&apos;,
+&apos;South Korea&apos;,&apos;South Korea&apos;,
+&apos;Taiwan&apos;,&apos;Taiwan&apos;,
+&apos;United Kingdom&apos;,&apos;United Kingdom&apos;,
+&apos;Republic of South Africa&apos;,&apos;South Africa&apos;,
+&apos;Ireland&apos;,&apos;Ireland&apos;,
+&apos;Netherlands&apos;,&apos;Netherlands&apos;,
+&apos;Luxembourg&apos;,&apos;Luxembourg&apos;,
+&apos;Belgium&apos;,&apos;Belgium&apos;,
+&apos;New Zealand&apos;,&apos;New Zealand&apos;,
+&apos;Australia&apos;,&apos;Australia&apos;,
+&apos;Japan&apos;,&apos;Japan&apos;,
+&apos;Myanmar&apos;,&apos;Myanmar&apos;,
+&apos;Pakistan&apos;,&apos;Pakistan&apos;,
+&apos;Vietnam&apos;,&apos;Vietnam&apos;,
+&apos;Thailand&apos;,&apos;Thailand&apos;,
+&apos;Singapore&apos;,&apos;Singapore&apos;,
+&apos;Philippines&apos;,&apos;Philippines&apos;,
+&apos;Malaysia&apos;,&apos;Malaysia&apos;,
+&apos;Indonesia&apos;,&apos;Indonesia&apos;,
+&apos;Global Rollup&apos;,&apos;Global Rollup&apos;,
+&apos;EMEA&apos;,&apos;EMEA&apos;,
+&apos;ASEAN&apos;,&apos;ASEAN&apos;,
+&apos;APCJ&apos;,&apos;APCJ&apos;,
+&apos;Americas&apos;,&apos;Americas&apos;,
+&apos;Greater India&apos;,&apos;India&apos;,
+&apos;ANZ&apos;,&apos;ANZ&apos;,
+&apos;Germany&apos;,&apos;Germany&apos;,
+&apos;Belgium&apos;,&apos;Belgium&apos;,
+&apos;Brazil&apos;,&apos;Brazil&apos;,
+&apos;Poland&apos;,&apos;Poland&apos;,
+&apos;Turkey&apos;,&apos;Turkey&apos;,
+&apos;Other&apos;)</expression>
+    </formulas>
+    <interviewLabel>PSA Assignment: Resource and Project Region {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>PSA Assignment: Resource and Project Region</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Project_Location</name>
+        <label>Get Project Location</label>
+        <locationX>765</locationX>
+        <locationY>695</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Region</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.pse__Project__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>pse__Proj__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>pse__Region__c</queriedFields>
+        <queriedFields>Theater__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>get_resource_location</name>
+        <label>get resource location</label>
+        <locationX>765</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>assign_country</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.pse__Resource__r.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Contact</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Country_of_Residence__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Out_of_Country</name>
+        <label>Out of Country</label>
+        <locationX>1480</locationX>
+        <locationY>1847</locationY>
+        <inputAssignments>
+            <field>DeliveryType__c</field>
+            <value>
+                <stringValue>Out of Country Delivery</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Delivery_Type</name>
+        <label>Update Delivery Type</label>
+        <locationX>50</locationX>
+        <locationY>1175</locationY>
+        <inputAssignments>
+            <field>DeliveryType__c</field>
+            <value>
+                <stringValue>In Country Delivery</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Delivery_Type_AMER</name>
+        <label>Update Delivery Type AMER</label>
+        <locationX>314</locationX>
+        <locationY>1415</locationY>
+        <inputAssignments>
+            <field>DeliveryType__c</field>
+            <value>
+                <stringValue>In Country Delivery</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Delivery_Type_ANZ</name>
+        <label>Update Delivery Type ANZ</label>
+        <locationX>1194</locationX>
+        <locationY>1415</locationY>
+        <inputAssignments>
+            <field>DeliveryType__c</field>
+            <value>
+                <stringValue>In Country Delivery</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Delivery_Type_APCJ</name>
+        <label>Update Delivery Type APCJ</label>
+        <locationX>1634</locationX>
+        <locationY>1415</locationY>
+        <inputAssignments>
+            <field>DeliveryType__c</field>
+            <value>
+                <stringValue>In Country Delivery</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Delivery_Type_ASEAN</name>
+        <label>Update Delivery Type ASEAN</label>
+        <locationX>2074</locationX>
+        <locationY>1415</locationY>
+        <inputAssignments>
+            <field>DeliveryType__c</field>
+            <value>
+                <stringValue>In Country Delivery</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Delivery_Type_EMEA</name>
+        <label>Update Delivery Type EMEA</label>
+        <locationX>754</locationX>
+        <locationY>1415</locationY>
+        <inputAssignments>
+            <field>DeliveryType__c</field>
+            <value>
+                <stringValue>In Country Delivery</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>639</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>get_resource_location</targetReference>
+        </connector>
+        <filterLogic>(4 or 5) and (2 or 3) and (1 or 6)</filterLogic>
+        <filters>
+            <field>pse__Resource__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue></stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>pse__Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>pse__Status__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Canceled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_Record_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>customer: billable</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_Record_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>customer: foc</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>pse__Resource__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>pse__Assignment__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>varCountryofResidence</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varCountyUpdate</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varProjRegionName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varTheater</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varupdatedregion</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>
