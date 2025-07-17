@@ -1,0 +1,9 @@
+You have been assigned as the Project Manager for {!pse__Proj__c.Name} by {!pse__Proj__c.LastModifiedBy}.
+
+Account: {!pse__Proj__c.pse__Account__c}
+Opportunity: {!pse__Proj__c.pse__Opportunity__c}
+Opportunity Owner: {!pse__Proj__c.pse__Opportunity_Owner__c}
+Estimated Project Start Date: {!pse__Proj__c.pse__Start_Date__c}
+
+Project Link: 
+{!pse__Proj__c.Link}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template is sent out to timecard owner when timecard was recalled by owner.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PSA Timecard Recalled</name>
+    <style>none</style>
+    <subject>Your timecard was recalled</subject>
+    <textOnly>Your time card for week ending {!pse__Timecard_Header__c.pse__End_Date__c} was recalled. Click the link below to view timecard details.
+
+Reject Reason: {!ApprovalRequest.Comments}
+
+Timecard Detail:
+{!pse__Timecard_Header__c.Link}
+
+Overview
+Project: {!pse__Timecard_Header__c.pse__Project__c}
+Week: {!pse__Timecard_Header__c.pse__Start_Date__c}-{!pse__Timecard_Header__c.pse__End_Date__c}
+Milestone: {!pse__Timecard_Header__c.pse__Milestone__c}
+Total Hours for the Week: {!pse__Timecard_Header__c.pse__Total_Hours__c}
+Billable: {!IF(pse__Timecard_Header__c.pse__Billable__c, &quot;Yes&quot;, &quot;No&quot;)}
+Timecard Id:{!pse__Timecard_Header__c.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

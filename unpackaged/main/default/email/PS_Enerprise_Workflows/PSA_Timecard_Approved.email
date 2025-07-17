@@ -1,0 +1,35 @@
+<p><b>Timecard Detail: </b><br>
+{!pse__Timecard_Header__c.Link}</p>
+
+<p><b>Overview </b><br>
+<b>Project: </b>{!pse__Timecard_Header__c.pse__Project__c} <br>
+<b>Resource: </b>{!pse__Timecard_Header__c.pse__Resource__c} <br>
+<b>Week: </b>{!pse__Timecard_Header__c.pse__Start_Date__c}-{!pse__Timecard_Header__c.pse__End_Date__c} <br>
+<b>Milestone:</b> {!pse__Timecard_Header__c.pse__Milestone__c} <br>
+<b>Total Hours for the Week: </b>{!pse__Timecard_Header__c.pse__Total_Hours__c} <br>
+<b>Remote/Onsite: </b>{!pse__Timecard_Header__c.Remote_Onsite__c}<br>
+<b>Billable: </b>{!IF(pse__Timecard_Header__c.pse__Billable__c, "Yes", "No")} <br>
+<b>Timecard Id:</b>{!pse__Timecard_Header__c.Name} <br>
+<b>Bill Rate:</b>{!pse__Timecard_Header__c.pse__Bill_Rate__c} <br>
+<b>Hours Remaining from Assignment: </b>{!pse__Timecard_Header__c.Assignment_Hours_Remaining_from_Last_Wk__c} <br>
+<b>Details:</b><br>
+<table>
+<tr>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+<th>Sunday</th>
+</tr>
+<tr>
+<td>{!pse__Timecard_Header__c.pse__Monday_Hours__c}</td>
+<td>{!pse__Timecard_Header__c.pse__Tuesday_Hours__c}</td>
+<td>{!pse__Timecard_Header__c.pse__Wednesday_Hours__c}</td>
+<td>{!pse__Timecard_Header__c.pse__Thursday_Hours__c}</td>
+<td>{!pse__Timecard_Header__c.pse__Friday_Hours__c}</td>
+<td>{!pse__Timecard_Header__c.pse__Saturday_Hours__c}</td>
+<td>{!pse__Timecard_Header__c.pse__Sunday_Hours__c}</td>
+</table>
+</p> <br>

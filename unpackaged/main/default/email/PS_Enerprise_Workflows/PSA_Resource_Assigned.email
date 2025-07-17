@@ -1,0 +1,14 @@
+{!pse__Assignment__c.LastModifiedBy} has assigned you to the following:
+
+ASSIGNMENT DETAILS:
+Project: {!pse__Assignment__c.pse__Project__c}
+
+Resource: {!pse__Assignment__c.pse__Resource__c}
+Assignment Role: {!pse__Assignment__c.pse__Role__c}
+Scheduled Hours: {!pse__Assignment__c.pse__Scheduled_Hours__c}
+Start Date: {!pse__Assignment__c.pse__Start_Date__c}
+End Date: {!pse__Assignment__c.pse__End_Date__c}
+Status: {!pse__Assignment__c.pse__Status__c}
+
+Assignment Link:
+{!pse__Assignment__c.Link}

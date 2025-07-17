@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template is used to notify the Project Manager assigned to the project.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PSA PM Project Notification</name>
+    <style>none</style>
+    <subject>New Project Manager Assignment: {!pse__Proj__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

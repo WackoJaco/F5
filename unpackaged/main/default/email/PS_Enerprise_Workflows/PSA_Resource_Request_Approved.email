@@ -1,0 +1,16 @@
+{!pse__Resource_Request__c.LastModifiedBy} has approved the following resource request.
+
+REQUEST DETAILS:
+Request Owner: {!pse__Resource_Request__c.OwnerFullName}
+Project: {!pse__Resource_Request__c.pse__Project__c}
+Opportunity: {!pse__Resource_Request__c.pse__Opportunity__c}
+
+Resource: {!pse__Resource_Request__c.pse__Staffer_Resource__c}
+Resource Role: {!pse__Resource_Request__c.pse__Resource_Role__c}
+Requested Hours: {!pse__Resource_Request__c.pse__SOW_Hours__c}
+Start Date: {!pse__Resource_Request__c.pse__Start_Date__c}
+End Date: {!pse__Resource_Request__c.pse__End_Date__c}
+Status: {!pse__Resource_Request__c.pse__Status__c}
+
+Resource Request Link:
+{!pse__Resource_Request__c.Link}

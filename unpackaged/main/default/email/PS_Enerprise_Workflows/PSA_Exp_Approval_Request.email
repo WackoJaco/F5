@@ -1,0 +1,23 @@
+An expense report is awaiting your approval. To approve the expenses, click the link below to view the report. 
+
+{!pse__Expense_Report__c.Link} 
+
+Details: 
+
+Project: 
+{!pse__Expense_Report__c.pse__Project__c} 
+
+Resource: 
+{!pse__Expense_Report__c.pse__Resource__c} 
+
+Week: 
+{!pse__Expense_Report__c.pse__First_Expense_Date__c} - {!pse__Expense_Report__c.pse__Last_Expense_Date__c} 
+
+Total Budget Remaining from Previous Report:
+{!pse__Expense_Report__c.Expense_Bgt_Remaining_from_Previous_Rpt__c}
+
+Total Billable Amount: 
+${!pse__Expense_Report__c.pse__Total_Billable_Amount__c} 
+
+Total Non-Billable Amount:
+{!pse__Expense_Report__c.pse__Total_Non_Billable_Amount__c}

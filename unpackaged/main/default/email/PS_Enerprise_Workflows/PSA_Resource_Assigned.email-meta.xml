@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template is used when a resource is assigned to a project</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PSA Resource Assigned</name>
+    <style>none</style>
+    <subject>Resource Assigned: {!pse__Assignment__c.pse__Project__c} - {!pse__Assignment__c.pse__Resource__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

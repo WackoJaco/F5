@@ -1,0 +1,8 @@
+A Timecard is awaiting your approval. Please respond with the body of approved or click this<a href="{!pse__Timecard_Header__c.Link}"> link to view the approval.</a> <br>
+<br>
+Details<br>
+- Project:{!pse__Timecard_Header__c.pse__Resource__c}<br>
+- Resource:{!pse__Timecard_Header__c.pse__Resource__c}<br>
+- Week:{!pse__Timecard_Header__c.pse__Start_Date__c}-{!pse__Timecard_Header__c.pse__End_Date__c}<br>
+- Milestone (optional):{!pse__Timecard_Header__c.pse__Milestone__c}<br>
+- Total Hours for the Week: {!pse__Timecard_Header__c.pse__Total_Hours__c}<br>
