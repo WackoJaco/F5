@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Template is sent out to expense report owner when expense report was rejected by approver.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PSA Expense Rejected</name>
+    <style>none</style>
+    <subject>Your expense report was rejected</subject>
+    <textOnly>Your expense report, {!pse__Expense_Report__c.Name}, with a last expense date of {!pse__Expense_Report__c.pse__Last_Expense_Date__c} was rejected. Click the detail link to go to the expense report and fix the issue.
+
+Reject Reason: {!ApprovalRequest.Comments}
+
+Expense Report Link: {!pse__Expense_Report__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

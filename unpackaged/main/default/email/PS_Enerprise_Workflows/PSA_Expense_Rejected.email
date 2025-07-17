@@ -1,0 +1,8 @@
+<p>Your expense report, {!pse__Expense_Report__c.Name}, with a last expense date of {!pse__Expense_Report__c.pse__Last_Expense_Date__c} was rejected. Click the detail link to go to the expense report and fix the issue. </p>
+
+<p>
+Reject Reason:
+{!ApprovalRequest.Comments}
+</p>
+
+<p>Expense Report Link: {!pse__Expense_Report__c.Link}</p>

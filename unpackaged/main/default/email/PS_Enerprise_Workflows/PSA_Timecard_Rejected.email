@@ -1,0 +1,16 @@
+<p>Your time card for week ending {!pse__Timecard_Header__c.pse__End_Date__c} was rejected. Click the link below to view timecard details. </p>
+
+<p>Reject Reason: {!ApprovalRequest.Comments} </p>
+
+<p>Timecard Detail: <br>
+{!pse__Timecard_Header__c.Link}</p>
+
+<p>Overview <br>
+Project: {!pse__Timecard_Header__c.pse__Project__c} <br>
+Week: {!pse__Timecard_Header__c.pse__Start_Date__c}-{!pse__Timecard_Header__c.pse__End_Date__c} <br>
+Milestone: {!pse__Timecard_Header__c.pse__Milestone__c} <br>
+Total Hours for the Week: {!pse__Timecard_Header__c.pse__Total_Hours__c} <br>
+Remote/Onsite: {!pse__Timecard_Header__c.Remote_Onsite__c}<br>
+Billable: {!IF(pse__Timecard_Header__c.pse__Billable__c, "Yes", "No")} <br>
+F5 Product: {!pse__Timecard_Header__c.F5_Product__c} <br>
+Timecard Id:{!pse__Timecard_Header__c.Name}</p> <br>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>pse__Project__c</field>
+        <field>pse__Resource__c</field>
+        <field>pse__Assignment__c</field>
+        <field>pse__Total_Billable_Amount__c</field>
+        <field>pse__Total_Non_Billable_Amount__c</field>
+        <field>pse__Total_Reimbursement_Amount__c</field>
+        <field>pse__First_Expense_Date__c</field>
+        <field>pse__Last_Expense_Date__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>PSA_Set_Status_to_Validated</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>Project_Owner__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Step 1 - Project Owner Approval</description>
+        <label>Step 1 - Project Owner Approval</label>
+        <name>Project_Owner_Approves_ER</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>pse__Approver__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Step 2 - Project Manager Approval - Final Approval</description>
+        <entryCriteria>
+            <formula>pse__Approver__r.Id &lt;&gt;   pse__Project__r.OwnerId</formula>
+        </entryCriteria>
+        <label>Step 2 - Project Manager Approval</label>
+        <name>Project_Manager_Approves_ER</name>
+        <rejectBehavior>
+            <type>BackToPrevious</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>All Expense Reports are routed to Project Owner (Coordinator) as First Level Approver, then to Project Manager for Final Approval.</description>
+    <emailTemplate>All/PSA_Expense_Report_Approval</emailTemplate>
+    <enableMobileDeviceAccess>true</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>LEN ( pse__Approver__c ) &gt; 0 &amp;&amp;
+(
+ISPICKVAL( pse__Status__c , &apos;Draft&apos;) || 
+ISPICKVAL( pse__Status__c , &apos;Submitted&apos;) || 
+ISPICKVAL( pse__Status__c , &apos;Rejected&apos;)
+)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>PSA_Exp_Report_Set_Status_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSA_Exp_Set_Include_in_FI_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSE_Exp_Report_Set_Approved_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>PSA_ER_Disable_Auto_Submit_False</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSA_Exp_Report_Send_Rejected_Email</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>PSA_Exp_Report_Set_Status_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSA_Exp_Report_Unset_Submitted_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSE_Exp_Report_Unset_Action_Include_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSE_Exp_Report_Unset_Approved_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>PSA_Exp_Report_Set_Status_Submitted</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSA_Exp_Rpt_Set_Disable_Appr_Auto_Submit</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSE_Exp_Report_Set_Submitted_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>PSA F5 ER Approval Process</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>1</processOrder>
+    <recallActions>
+        <action>
+            <name>PSA_ER_Disable_Auto_Submit_False</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSA_Exp_Report_Set_Status_Draft</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSA_Exp_Report_Unset_Submitted_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSE_Exp_Report_Unset_Action_Include_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>PSE_Exp_Report_Unset_Approved_Flag</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

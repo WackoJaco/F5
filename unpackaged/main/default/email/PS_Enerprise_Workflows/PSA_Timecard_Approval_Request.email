@@ -1,0 +1,56 @@
+The following timecard is awaiting for your approval. 
+
+To approve/reject in Salesforce, Click the following link: {!pse__Timecard_Header__c.Link}
+
+Or you can respond to this email with APPROVED or REJECTED
+
+Overview:
+Project: {!pse__Timecard_Header__c.pse__Project__c} 
+Resource: {!pse__Timecard_Header__c.pse__Resource__c} 
+Week: {!pse__Timecard_Header__c.pse__Start_Date__c}-{!pse__Timecard_Header__c.pse__End_Date__c} 
+Milestone: {!pse__Timecard_Header__c.pse__Milestone__c} 
+Total Hours for the Week: {!pse__Timecard_Header__c.pse__Total_Hours__c}
+Remote/Onsite: {!pse__Timecard_Header__c.Remote_Onsite__c} 
+Billable: {!IF(pse__Timecard_Header__c.pse__Billable__c, "Yes", "No")} 
+Timecard Id: {!pse__Timecard_Header__c.Name}
+Bill Rate: {!pse__Timecard_Header__c.pse__Bill_Rate__c}
+Hours Remaining: {!pse__Timecard_Header__c.Assignment_Hours_Remaining_from_Last_Wk__c}
+Comments: {!ApprovalRequest.Comments}
+
+Details 
+Hours Balance if Approved: {!pse__Timecard_Header__c.Hours_Balance_if_Approved__c}
+
+Monday: {!pse__Timecard_Header__c.pse__Monday_Hours__c} 
+{!pse__Timecard_Header__c.F5_Product__c}
+{!pse__Timecard_Header__c.pse__Monday_Notes__c} 
+{!pse__Timecard_Header__c.pse__Location_Mon__c}
+
+Tuesday: {!pse__Timecard_Header__c.pse__Tuesday_Hours__c} 
+{!pse__Timecard_Header__c.F5_Product__c}
+{!pse__Timecard_Header__c.pse__Tuesday_Notes__c} 
+{!pse__Timecard_Header__c.pse__Location_Tue__c}
+
+Wednesday: {!pse__Timecard_Header__c.pse__Wednesday_Hours__c} 
+{!pse__Timecard_Header__c.F5_Product__c}
+{!pse__Timecard_Header__c.pse__Wednesday_Notes__c} 
+{!pse__Timecard_Header__c.pse__Location_Wed__c}
+
+Thursday: {!pse__Timecard_Header__c.pse__Thursday_Hours__c} 
+{!pse__Timecard_Header__c.F5_Product__c}
+{!pse__Timecard_Header__c.pse__Thursday_Notes__c} 
+{!pse__Timecard_Header__c.pse__Location_Thu__c}
+
+Friday: {!pse__Timecard_Header__c.pse__Friday_Hours__c} 
+{!pse__Timecard_Header__c.F5_Product__c}
+{!pse__Timecard_Header__c.pse__Friday_Notes__c} 
+{!pse__Timecard_Header__c.pse__Location_Fri__c}
+
+Saturday: {!pse__Timecard_Header__c.pse__Saturday_Hours__c} 
+{!pse__Timecard_Header__c.F5_Product__c}
+{!pse__Timecard_Header__c.pse__Saturday_Notes__c}
+{!pse__Timecard_Header__c.pse__Location_Sat__c}
+
+Sunday: {!pse__Timecard_Header__c.pse__Sunday_Hours__c} 
+{!pse__Timecard_Header__c.F5_Product__c}
+{!pse__Timecard_Header__c.pse__Sunday_Notes__c} 
+{!pse__Timecard_Header__c.pse__Location_Sun__c}
