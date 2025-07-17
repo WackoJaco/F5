@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onsite_Delivery__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Select if Consulting Services will be Delivered onsite. If True, Customer Site Address Fields below are required.</inlineHelpText>
+    <label>Customer Onsite Delivery</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

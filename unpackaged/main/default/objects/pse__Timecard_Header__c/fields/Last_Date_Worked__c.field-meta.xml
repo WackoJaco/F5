@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Date_Worked__c</fullName>
+    <formula>IF( pse__Saturday_Hours__c &gt; 0,  pse__End_Date__c,
+IF( pse__Friday_Hours__c &gt; 0, pse__End_Date__c -1,
+IF( pse__Thursday_Hours__c &gt; 0, pse__End_Date__c -2,
+IF( pse__Wednesday_Hours__c &gt; 0, pse__End_Date__c -3,
+IF( pse__Tuesday_Hours__c &gt; 0, pse__End_Date__c -4,
+IF( pse__Monday_Hours__c &gt;0, pse__End_Date__c -5,
+IF( pse__Sunday_Hours__c &gt;0, pse__End_Date__c -6,
+pse__Start_Date__c)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Last Date Worked</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

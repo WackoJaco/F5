@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Project_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>A descriptive classification of the project</description>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative Time</fullName>
+                <default>false</default>
+                <label>Administrative Time</label>
+            </value>
+            <value>
+                <fullName>Customer Project</fullName>
+                <default>true</default>
+                <label>Customer Project</label>
+            </value>
+            <value>
+                <fullName>Internal PS Initiative</fullName>
+                <default>false</default>
+                <label>Internal PS Initiative</label>
+            </value>
+            <value>
+                <fullName>Paid Time Off</fullName>
+                <default>false</default>
+                <label>Paid Time Off</label>
+            </value>
+            <value>
+                <fullName>Pre/Post Project Time</fullName>
+                <default>false</default>
+                <label>Pre/Post Project Time</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

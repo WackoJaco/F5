@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Processed_by_OR__c</fullName>
+    <inlineHelpText>Processed = Approved, otherwise choose the reject reason</inlineHelpText>
+    <label>Processed by OR</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Processed</fullName>
+                <default>false</default>
+                <label>Processed</label>
+            </value>
+            <value>
+                <fullName>Resubmitted</fullName>
+                <default>false</default>
+                <label>Resubmitted</label>
+            </value>
+            <value>
+                <fullName>Reject - SKU</fullName>
+                <default>false</default>
+                <label>Reject - SKU</label>
+            </value>
+            <value>
+                <fullName>Reject - QTY</fullName>
+                <default>false</default>
+                <label>Reject - QTY</label>
+            </value>
+            <value>
+                <fullName>Reject - Unit Price</fullName>
+                <default>false</default>
+                <label>Reject - Unit Price</label>
+            </value>
+            <value>
+                <fullName>Reject - Order Closed</fullName>
+                <default>false</default>
+                <label>Reject - Order Closed</label>
+            </value>
+            <value>
+                <fullName>Reject - Other (Please enter reason)</fullName>
+                <default>false</default>
+                <label>Reject - Other (Please enter reason)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

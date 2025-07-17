@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expiring_Comment__c</fullName>
+    <description>Upload of Expiring Comments or Variable Contract End Date from deferred report and variable tab</description>
+    <inlineHelpText>Upload of Expiring Comments or Variable Contract End Date from deferred report and variable tab</inlineHelpText>
+    <label>Expiring Comment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

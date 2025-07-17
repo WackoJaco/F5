@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RFTCount__c</fullName>
+    <description>This field counts the Revenue Forecast Types(Revenue SourceEQUALSDeliverable: Milestone, Deliverable: EVA) with Schedule Revenue &gt; $0.01</description>
+    <label>RFT Count</label>
+    <summaryFilterItems>
+        <field>pse__Revenue_Forecast_Type__c.pse__Revenue_Source__c</field>
+        <operation>equals</operation>
+        <value>Deliverable: Milestone, Deliverable: EVA</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>pse__Revenue_Forecast_Type__c.pse__Scheduled_Revenue__c</field>
+        <operation>greaterThan</operation>
+        <value>0.01</value>
+    </summaryFilterItems>
+    <summaryForeignKey>pse__Revenue_Forecast_Type__c.pse__Revenue_Forecast__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

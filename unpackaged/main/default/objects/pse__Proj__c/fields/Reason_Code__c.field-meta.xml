@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Code__c</fullName>
+    <description>IT3094347</description>
+    <label>Reason Code</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Backlog_Category__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Order</fullName>
+                <default>false</default>
+                <label>New Order</label>
+            </value>
+            <value>
+                <fullName>Short Term - less than 1 Q</fullName>
+                <default>false</default>
+                <label>Short Term - less than 1 Q</label>
+            </value>
+            <value>
+                <fullName>Long Term - more than 1 Q</fullName>
+                <default>false</default>
+                <label>Long Term - more than 1 Q</label>
+            </value>
+            <value>
+                <fullName>Customer Hold 1 Quarter</fullName>
+                <default>false</default>
+                <label>Customer Hold 1 Quarter</label>
+            </value>
+            <value>
+                <fullName>Customer Hold Greater than 2 Quarters</fullName>
+                <default>false</default>
+                <label>Customer Hold Greater than 2 Quarters</label>
+            </value>
+            <value>
+                <fullName>Requested</fullName>
+                <default>false</default>
+                <label>Requested</label>
+            </value>
+            <value>
+                <fullName>Pending Customer Project Timelines</fullName>
+                <default>false</default>
+                <label>Pending Customer Project Timelines</label>
+            </value>
+            <value>
+                <fullName>Information required</fullName>
+                <default>false</default>
+                <label>Information required</label>
+            </value>
+            <value>
+                <fullName>Non-Responsive Customer</fullName>
+                <default>false</default>
+                <label>Non-Responsive Customer</label>
+            </value>
+            <value>
+                <fullName>Requesting Scope</fullName>
+                <default>false</default>
+                <label>Requesting Scope</label>
+            </value>
+            <value>
+                <fullName>SOW / CO in Progress</fullName>
+                <default>false</default>
+                <label>SOW / CO in Progress</label>
+            </value>
+            <value>
+                <fullName>Pending Signature</fullName>
+                <default>false</default>
+                <label>Pending Signature</label>
+            </value>
+            <value>
+                <fullName>Deferred Awaiting Recognition</fullName>
+                <default>false</default>
+                <label>Deferred Awaiting Recognition</label>
+            </value>
+            <value>
+                <fullName>Project Completed / Canceled</fullName>
+                <default>false</default>
+                <label>Project Completed / Canceled</label>
+            </value>
+            <value>
+                <fullName>Non-Responsive Customer / Old Order</fullName>
+                <default>false</default>
+                <label>Non-Responsive Customer / Old Order</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>New Order</controllingFieldValue>
+            <valueName>New Order</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivering</controllingFieldValue>
+            <valueName>Short Term - less than 1 Q</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delivering</controllingFieldValue>
+            <valueName>Long Term - more than 1 Q</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Hold</controllingFieldValue>
+            <valueName>Customer Hold 1 Quarter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Hold</controllingFieldValue>
+            <valueName>Customer Hold Greater than 2 Quarters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scheduling</controllingFieldValue>
+            <valueName>Requested</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Scheduling</controllingFieldValue>
+            <valueName>Pending Customer Project Timelines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending</controllingFieldValue>
+            <valueName>Information required</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Sales</controllingFieldValue>
+            <valueName>Non-Responsive Customer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Sales</controllingFieldValue>
+            <valueName>Requesting Scope</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Sales</controllingFieldValue>
+            <valueName>SOW / CO in Progress</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Sales</controllingFieldValue>
+            <valueName>Pending Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending Closure</controllingFieldValue>
+            <valueName>Deferred Awaiting Recognition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending Closure</controllingFieldValue>
+            <valueName>Project Completed / Canceled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pending Closure</controllingFieldValue>
+            <valueName>Non-Responsive Customer / Old Order</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

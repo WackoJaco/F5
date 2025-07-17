@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Group__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Picklist of certification groups.</description>
+    <label>Group</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>External Certification</fullName>
+                <default>false</default>
+                <label>External Certification</label>
+            </value>
+            <value>
+                <fullName>Security Clearance</fullName>
+                <default>false</default>
+                <label>Security Clearance</label>
+            </value>
+            <value>
+                <fullName>Visa</fullName>
+                <default>false</default>
+                <label>Visa</label>
+            </value>
+            <value>
+                <fullName>Language (spoken)</fullName>
+                <default>false</default>
+                <label>Language (spoken)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

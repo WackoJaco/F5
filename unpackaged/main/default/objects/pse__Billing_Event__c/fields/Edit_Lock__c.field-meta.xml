@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Lock__c</fullName>
+    <description>ENH20813 - To be used in validation rule to lock down specific fields from editing if this formual reults in "YES"</description>
+    <externalId>false</externalId>
+    <formula>IF(
+AND(
+pse__Invoiced__c = TRUE,
+OR( 
+ISPICKVAL(Stage__c,'Invoiced'),  
+ISPICKVAL(Stage__c,'Oracle/PSA Reconciled'))), 'YES', 'No')</formula>
+    <label>Edit Lock</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

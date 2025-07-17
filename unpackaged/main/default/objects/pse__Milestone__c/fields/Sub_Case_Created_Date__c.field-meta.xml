@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Case_Created_Date__c</fullName>
+    <inlineHelpText>From AR Installs Report. Typically the date when equipment was shipped and Invoiced. Rev Rec is 90 days after this or upon Delivery, if earlier. Upon populating this Field, 'Target Date' Field automatically calculates to 90 days out.</inlineHelpText>
+    <label>Oracle Sub-Case Create Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

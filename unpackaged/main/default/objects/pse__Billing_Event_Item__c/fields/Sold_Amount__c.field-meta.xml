@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sold_Amount__c</fullName>
+    <formula>IF(LEN(pse__Milestone__c) &gt; 0, pse__Milestone__r.Sales_Price__c,
+IF(LEN(pse__Timecard_Split__c ) &gt; 0, pse__Timecard_Split__r.Sold_Billable_Amount__c,
+IF(LEN(pse__Expense__c) &gt; 0, pse__Expense__r.Sold_Amount__c,
+0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Sold Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

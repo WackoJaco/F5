@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Permission_Control_Type__c</fullName>
+    <inlineHelpText>Stand-alone or cascading Permissions granted to PSA Users. Controlled by Region, Practice, Group, Project, or Resource. Select Permission aligning to functional access being extended. Create additional records for each controlling Object and/or Function.</inlineHelpText>
+    <label>Permission Control Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Billing Event Mgmt</fullName>
+                <default>false</default>
+                <label>Billing Event Mgmt</label>
+            </value>
+            <value>
+                <fullName>Forecast Mgmt</fullName>
+                <default>false</default>
+                <label>Forecast Mgmt</label>
+            </value>
+            <value>
+                <fullName>PSA Admin Mgmt (Region)</fullName>
+                <default>false</default>
+                <label>PSA Admin Mgmt (Region)</label>
+            </value>
+            <value>
+                <fullName>PSA Admin Mgmt (Practice)</fullName>
+                <default>false</default>
+                <label>PSA Admin Mgmt (Practice)</label>
+            </value>
+            <value>
+                <fullName>PSA Admin Mgmt (Group)</fullName>
+                <default>false</default>
+                <label>PSA Admin Mgmt (Group)</label>
+            </value>
+            <value>
+                <fullName>Project Version &amp; Gantt Mgmt</fullName>
+                <default>false</default>
+                <label>Project Version &amp; Gantt Mgmt</label>
+            </value>
+            <value>
+                <fullName>RR Mgmt (Region)</fullName>
+                <default>false</default>
+                <label>RR Mgmt (Region)</label>
+            </value>
+            <value>
+                <fullName>RR Mgmt (Practice)</fullName>
+                <default>false</default>
+                <label>RR Mgmt (Practice)</label>
+            </value>
+            <value>
+                <fullName>RR Mgmt (Group)</fullName>
+                <default>false</default>
+                <label>RR Mgmt (Group)</label>
+            </value>
+            <value>
+                <fullName>Skills Mgmt (Region)</fullName>
+                <default>false</default>
+                <label>Skills Mgmt (Region)</label>
+            </value>
+            <value>
+                <fullName>Skills Mgmt (Practice)</fullName>
+                <default>false</default>
+                <label>Skills Mgmt (Practice)</label>
+            </value>
+            <value>
+                <fullName>Skills Mgmt (Group)</fullName>
+                <default>false</default>
+                <label>Skills Mgmt (Group)</label>
+            </value>
+            <value>
+                <fullName>Staffing Mgmt (Region)</fullName>
+                <default>false</default>
+                <label>Staffing Mgmt (Region)</label>
+            </value>
+            <value>
+                <fullName>Staffing Mgmt (Practice)</fullName>
+                <default>false</default>
+                <label>Staffing Mgmt (Practice)</label>
+            </value>
+            <value>
+                <fullName>Staffing Mgmt (Group)</fullName>
+                <default>false</default>
+                <label>Staffing Mgmt (Group)</label>
+            </value>
+            <value>
+                <fullName>T&amp;E Entry (Region)</fullName>
+                <default>false</default>
+                <label>T&amp;E Entry (Region)</label>
+            </value>
+            <value>
+                <fullName>T&amp;E Entry (Practice)</fullName>
+                <default>false</default>
+                <label>T&amp;E Entry (Practice)</label>
+            </value>
+            <value>
+                <fullName>T&amp;E Entry (Group)</fullName>
+                <default>false</default>
+                <label>T&amp;E Entry (Group)</label>
+            </value>
+            <value>
+                <fullName>T&amp;E Mgmt (Region)</fullName>
+                <default>false</default>
+                <label>T&amp;E Mgmt (Region)</label>
+            </value>
+            <value>
+                <fullName>T&amp;E Mgmt (Practice)</fullName>
+                <default>false</default>
+                <label>T&amp;E Mgmt (Practice)</label>
+            </value>
+            <value>
+                <fullName>T&amp;E Mgmt (Group)</fullName>
+                <default>false</default>
+                <label>T&amp;E Mgmt (Group)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

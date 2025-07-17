@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <description>STRY0023480 - Alison Israel</description>
+    <label>Stage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Process by PS</fullName>
+                <default>true</default>
+                <label>In Process by PS</label>
+            </value>
+            <value>
+                <fullName>Submitted to OR</fullName>
+                <default>false</default>
+                <label>Submitted to OR</label>
+            </value>
+            <value>
+                <fullName>In Process by OR</fullName>
+                <default>false</default>
+                <label>In Process by OR</label>
+            </value>
+            <value>
+                <fullName>Submitted to OV</fullName>
+                <default>false</default>
+                <label>Submitted to OV</label>
+            </value>
+            <value>
+                <fullName>In Process by OV</fullName>
+                <default>false</default>
+                <label>In Process by OV</label>
+            </value>
+            <value>
+                <fullName>Invoiced</fullName>
+                <default>false</default>
+                <label>Invoiced</label>
+            </value>
+            <value>
+                <fullName>Rejected by OR: SKU</fullName>
+                <default>false</default>
+                <label>Rejected by OR: SKU</label>
+            </value>
+            <value>
+                <fullName>Rejected by OR: Qty</fullName>
+                <default>false</default>
+                <label>Rejected by OR: Qty</label>
+            </value>
+            <value>
+                <fullName>Rejected by OR: Unit Price</fullName>
+                <default>false</default>
+                <label>Rejected by OR: Unit Price</label>
+            </value>
+            <value>
+                <fullName>Rejected by OR: Order Closed</fullName>
+                <default>false</default>
+                <label>Rejected by OR: Order Closed</label>
+            </value>
+            <value>
+                <fullName>Rejected by OR: Other (please describe)</fullName>
+                <default>false</default>
+                <label>Rejected by OR: Other (please describe)</label>
+            </value>
+            <value>
+                <fullName>Submitted to AR</fullName>
+                <default>false</default>
+                <label>Submitted to AR</label>
+            </value>
+            <value>
+                <fullName>Revenue Recognized</fullName>
+                <default>false</default>
+                <label>Revenue Recognized</label>
+            </value>
+            <value>
+                <fullName>Rejected by AR: Incorrect Rate/Amount</fullName>
+                <default>false</default>
+                <label>Rejected by AR: Incorrect Rate/Amount</label>
+            </value>
+            <value>
+                <fullName>Rejected by AR: Future-Dated</fullName>
+                <default>false</default>
+                <label>Rejected by AR: Future-Dated</label>
+            </value>
+            <value>
+                <fullName>Rejected by AR: No Balance Remaining</fullName>
+                <default>false</default>
+                <label>Rejected by AR: No Balance Remaining</label>
+            </value>
+            <value>
+                <fullName>Rejected by AR: Order Not Invoiced</fullName>
+                <default>false</default>
+                <label>Rejected by AR: Order Not Invoiced</label>
+            </value>
+            <value>
+                <fullName>Rejected by AR: Other (please describe)</fullName>
+                <default>false</default>
+                <label>Rejected by AR: Other (please describe)</label>
+            </value>
+            <value>
+                <fullName>Oracle PSA Reconciled</fullName>
+                <default>false</default>
+                <label>Oracle/PSA Reconciled</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

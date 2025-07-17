@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PS_Sub_theatre__c</fullName>
+    <description>7/28/20 M.Kim: Deprecating as part of PSA 2.0 clean-up. Initially created for PSA 1.0 but not utilized. In addition, new RPG Hierarchy achieves original purpose of Field.
+2015 - TKT233762 - Groupings within theatres for reporting purposes</description>
+    <externalId>false</externalId>
+    <formula>IF(
+  OR(
+    CONTAINS( pse__Region__r.Name, 'TRAFFIX' ),
+    pse__Region__r.Name = 'APAC-INDIA',
+    pse__Region__r.Name = 'APAC-KOREA',
+    pse__Region__r.Name = 'JAPAN',
+    pse__Region__r.pse__Parent_Region__r.Name = 'AMERICAS-N AMERICA',
+    pse__Region__r.Name = 'F5 CORP'
+  ),
+  pse__Region__r.Name,
+  pse__Region__r.pse__Parent_Region__r.Name
+)</formula>
+    <inlineHelpText>7/28/20 M.Kim: Deprecating as part of PSA 2.0 clean-up. Initially created for PSA 1.0 but not utilized. In addition, new RPG Hierarchy achieves original purpose of Field.</inlineHelpText>
+    <label>PS Sub-theatre</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

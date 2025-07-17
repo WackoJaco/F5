@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Travel_Expense_Estimate__c</fullName>
+    <description>8/19: M.Kim - renamed Label from Allocated Expenses to Travel Expense: Estimate
+ADO 39187 - Changed label from Expense Amount to Allocated Expenses.</description>
+    <formula>Product_Name__r.Expense_Amount__c</formula>
+    <inlineHelpText>Covers Consultant travel for on-site Delivery. Assumes $2,500/round-trip, applies to PM resource when Fixed Services includes PM Hrs. Unused/remaining amount contributes to Revenue when Customer opts for remote delivery.</inlineHelpText>
+    <label>Travel Expense: Estimate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

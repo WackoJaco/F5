@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PS_Consulting_Region__c</fullName>
+    <externalId>false</externalId>
+    <formula>pse__Project__r.pse__Region__r.Name</formula>
+    <inlineHelpText>This Field is defaulted from the Project. If it needs to be modified, do so from the Project page.</inlineHelpText>
+    <label>Region</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

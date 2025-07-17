@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Set of skill types. Used when grouping skills capacity reports.</description>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3rd_Party_Product</fullName>
+                <default>false</default>
+                <label>3rd Party Product</label>
+            </value>
+            <value>
+                <fullName>Automation_Orchestration</fullName>
+                <default>false</default>
+                <label>Automation &amp; Orchestration</label>
+            </value>
+            <value>
+                <fullName>Cloud</fullName>
+                <default>false</default>
+                <label>Cloud</label>
+            </value>
+            <value>
+                <fullName>External_Certification</fullName>
+                <default>false</default>
+                <label>External Certification</label>
+            </value>
+            <value>
+                <fullName>F5 Managed Service</fullName>
+                <default>false</default>
+                <label>F5 Managed Service</label>
+            </value>
+            <value>
+                <fullName>F5_Product</fullName>
+                <default>false</default>
+                <label>F5 Product</label>
+            </value>
+            <value>
+                <fullName>F5 Product Feature</fullName>
+                <default>false</default>
+                <label>F5 Product Feature</label>
+            </value>
+            <value>
+                <fullName>Language_spoken</fullName>
+                <default>false</default>
+                <label>Language (spoken)</label>
+            </value>
+            <value>
+                <fullName>Programming Language</fullName>
+                <default>false</default>
+                <label>Programming Language</label>
+            </value>
+            <value>
+                <fullName>Security_Clearance</fullName>
+                <default>false</default>
+                <label>Security Clearance</label>
+            </value>
+            <value>
+                <fullName>Technology</fullName>
+                <default>false</default>
+                <label>Technology</label>
+            </value>
+            <value>
+                <fullName>Visa</fullName>
+                <default>false</default>
+                <label>Visa</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

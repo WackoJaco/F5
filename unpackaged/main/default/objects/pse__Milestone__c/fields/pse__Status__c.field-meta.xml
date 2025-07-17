@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Status__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Planned</fullName>
+                <default>true</default>
+                <label>Planned</label>
+            </value>
+            <value>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Canceled</fullName>
+                <default>false</default>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+            <value>
+                <fullName>Converted to Training</fullName>
+                <default>false</default>
+                <label>Converted to Training</label>
+            </value>
+            <value>
+                <fullName>Work Completed</fullName>
+                <default>false</default>
+                <label>Work Completed</label>
+            </value>
+            <value>
+                <fullName>Awaiting Customer Sign-off</fullName>
+                <default>false</default>
+                <label>Awaiting Customer Sign-off</label>
+            </value>
+            <value>
+                <fullName>Customer Sign-off Completed</fullName>
+                <default>false</default>
+                <label>Customer Sign-off Completed</label>
+            </value>
+            <value>
+                <fullName>Revenue Recognized, Work not Complete</fullName>
+                <default>false</default>
+                <label>Revenue Recognized, Work not Complete</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

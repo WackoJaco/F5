@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Revenue_Recognized__c</fullName>
+    <label>Revenue Recognized</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Revenue Recognized</fullName>
+                <default>false</default>
+                <label>Revenue Recognized</label>
+            </value>
+            <value>
+                <fullName>Resubmitted</fullName>
+                <default>false</default>
+                <label>Resubmitted</label>
+            </value>
+            <value>
+                <fullName>Reject - Incorrect Expense Amount</fullName>
+                <default>false</default>
+                <label>Reject - Incorrect Expense Amount</label>
+            </value>
+            <value>
+                <fullName>Reject - Future Dated</fullName>
+                <default>false</default>
+                <label>Reject - Future Dated</label>
+            </value>
+            <value>
+                <fullName>Reject - Zero Revenue Available</fullName>
+                <default>false</default>
+                <label>Reject - Zero Revenue Available</label>
+            </value>
+            <value>
+                <fullName>Reject - Order Not Invoiced</fullName>
+                <default>false</default>
+                <label>Reject - Order Not Invoiced</label>
+            </value>
+            <value>
+                <fullName>Reject - Other (Please enter reason)</fullName>
+                <default>false</default>
+                <label>Reject - Other (Please enter reason)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

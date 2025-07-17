@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OASIS_Revenue_Factor__c</fullName>
+    <description>Deprecating as part of PSA 2.0 clean-up. Initially created for PSA 1.0 but not utilized.</description>
+    <formula>IF(OASIS_Customer_Amount__c = 0, 0, pse__Total_Projected_Revenue_From_Assignments__c/OASIS_Customer_Amount__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Deprecating as part of PSA 2.0 clean-up. Initially created for PSA 1.0 but not utilized.
+
+Percentage to discount the list price when revenuing services delivered</inlineHelpText>
+    <label>OASIS Revenue Factor</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

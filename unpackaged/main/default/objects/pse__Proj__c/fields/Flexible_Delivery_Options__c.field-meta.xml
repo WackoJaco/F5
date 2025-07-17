@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flexible_Delivery_Options__c</fullName>
+    <description>ENH22784.</description>
+    <label>Flexible Delivery Options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Any Resource</fullName>
+                <default>false</default>
+                <label>Any Resource</label>
+            </value>
+            <value>
+                <fullName>Bench Delivery</fullName>
+                <default>false</default>
+                <label>Bench Delivery</label>
+            </value>
+            <value>
+                <fullName>Blended F5/Partner Delivery</fullName>
+                <default>false</default>
+                <label>Blended F5/Partner Delivery</label>
+            </value>
+            <value>
+                <fullName>F5 Only</fullName>
+                <default>false</default>
+                <label>F5 Only</label>
+            </value>
+            <value>
+                <fullName>F5 Only – Federal Clearance</fullName>
+                <default>false</default>
+                <label>F5 Only – Federal Clearance</label>
+            </value>
+            <value>
+                <fullName>Guardian Delivery</fullName>
+                <default>false</default>
+                <label>Guardian Delivery</label>
+            </value>
+            <value>
+                <fullName>SubK with Permission</fullName>
+                <default>false</default>
+                <label>SubK with Permission</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

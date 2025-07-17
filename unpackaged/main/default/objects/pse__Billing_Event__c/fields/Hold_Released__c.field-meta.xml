@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hold_Released__c</fullName>
+    <inlineHelpText>Released = Approved, otherwise enter the reject reason.</inlineHelpText>
+    <label>Hold Released</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Released</fullName>
+                <default>false</default>
+                <label>Released</label>
+            </value>
+            <value>
+                <fullName>Resubmitted</fullName>
+                <default>false</default>
+                <label>Resubmitted</label>
+            </value>
+            <value>
+                <fullName>Reject - Pricing doesn't match</fullName>
+                <default>false</default>
+                <label>Reject - Pricing doesn't match</label>
+            </value>
+            <value>
+                <fullName>Reject - Hours don't match</fullName>
+                <default>false</default>
+                <label>Reject - Hours don't match</label>
+            </value>
+            <value>
+                <fullName>Reject - Other (Please enter reason)</fullName>
+                <default>false</default>
+                <label>Reject - Other (Please enter reason)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

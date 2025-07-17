@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>f5_Quarterly_Billable_Utilization__c</fullName>
+    <formula>IF(ISPICKVAL(pse__Time_Period_Type__c, "Quarter"),pse__Historical_Billable_Hours__c/520, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>f5 Quarterly Billable Utilization %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

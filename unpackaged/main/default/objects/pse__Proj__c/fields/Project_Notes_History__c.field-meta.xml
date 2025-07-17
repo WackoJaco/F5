@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Notes_History__c</fullName>
+    <description>This field concatenates the info entered in Project Status Notes and Notes fields to create a history to track backlog, customer communication, project status, etc.</description>
+    <inlineHelpText>This field concatenates the info entered in Project Status Notes and Notes fields to create a history to track backlog, customer communication, project status, etc.</inlineHelpText>
+    <label>Project Notes History</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

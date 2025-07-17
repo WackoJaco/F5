@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Revenue_Quarter__c</fullName>
+    <description>M.Kim: 7/28/20:  Deprecating as part of PSA 2.0 clean-up. Initially created for PSA 1.0 but not utilized.</description>
+    <inlineHelpText>M.Kim: 7/28/20:  Deprecating as part of PSA 2.0 clean-up. Initially created for PSA 1.0 but not utilized.</inlineHelpText>
+    <label>Target Revenue Quarter</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

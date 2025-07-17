@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Success_Manager__c</fullName>
+    <description>The F5 CSM assigned to this Customer's Account.</description>
+    <externalId>false</externalId>
+    <formula>pse__Account__r.CSM__r.FullName__c</formula>
+    <inlineHelpText>The F5 CSM assigned to this Customer's Account.</inlineHelpText>
+    <label>Customer Success Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resource_is_Current_User__c</fullName>
+    <description>Intended for use as a Field for Filter Criteria on Reports &amp; Dashboards when report results should be dynamic based on the Current Running User, not the User who created the record, or owns the record.
+Example: Billable Resources need to see 'My Assignments', 'My Time Cards' or 'My Expense Reports', and those records were created/owned by the Project Manager or Project Coordinator.</description>
+    <formula>$User.Id = pse__Resource__r.pse__Salesforce_User__r.Id</formula>
+    <inlineHelpText>Used in Reporting when results should be dynamic based on Running User, not User who created the record, or owns the record.
+Ex: Billable Resources need to see My Assignments, My TCs, My Expense Reports and those records were created/owned by PM/PC.</inlineHelpText>
+    <label>Resource is Current User</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

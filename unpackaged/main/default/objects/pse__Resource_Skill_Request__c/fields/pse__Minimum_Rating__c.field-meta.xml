@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pse__Minimum_Rating__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Minimum Rating</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1 - Trained</fullName>
+                <default>false</default>
+                <label>1 - Trained</label>
+            </value>
+            <value>
+                <fullName>2 - Experienced</fullName>
+                <default>false</default>
+                <label>2 - Experienced</label>
+            </value>
+            <value>
+                <fullName>3 - SME</fullName>
+                <default>false</default>
+                <label>3 - SME</label>
+            </value>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

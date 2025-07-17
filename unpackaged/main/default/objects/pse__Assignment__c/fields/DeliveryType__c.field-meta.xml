@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeliveryType__c</fullName>
+    <inlineHelpText>Identifies work being delivered by Consultants outside of their country of residence. (Comparison of Project Region to Country of Residence on the Resource's PSA Contact record.)</inlineHelpText>
+    <label>Delivery Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>In Country Delivery</fullName>
+                <default>false</default>
+                <label>In Country Delivery</label>
+            </value>
+            <value>
+                <fullName>Out of Country Delivery</fullName>
+                <default>false</default>
+                <label>Out of Country Delivery</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

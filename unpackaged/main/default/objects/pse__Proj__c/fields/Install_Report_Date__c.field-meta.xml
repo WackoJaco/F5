@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Install_Report_Date__c</fullName>
+    <description>Date the Install Report was sent that was used to upload Install Report Amount field</description>
+    <inlineHelpText>Date the Install Report was sent that was used to upload Install Report Amount field</inlineHelpText>
+    <label>Install Report Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

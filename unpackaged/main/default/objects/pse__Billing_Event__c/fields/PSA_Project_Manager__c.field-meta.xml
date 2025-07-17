@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PSA_Project_Manager__c</fullName>
+    <externalId>false</externalId>
+    <formula>pse__Project__r.PSA_Project_Manager__r.pse__Salesforce_User__r.FullName__c</formula>
+    <inlineHelpText>Project Manager or Project Coordinator.
+Responsible for operational functions on PSA Project such as Customer Engagement Scheduling, Resource Staffing, Assignment Mgmt, and Billing+Rev Rec processing. See field on Project page to make updates.</inlineHelpText>
+    <label>PSA Project Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

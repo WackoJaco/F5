@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Oracle_Invoice_Number__c</fullName>
+    <externalId>false</externalId>
+    <formula>pse__Billing_Event__r.pse__Invoice_Number__c</formula>
+    <inlineHelpText>Invoice Number from the Billing Event record</inlineHelpText>
+    <label>Oracle Invoice Number</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

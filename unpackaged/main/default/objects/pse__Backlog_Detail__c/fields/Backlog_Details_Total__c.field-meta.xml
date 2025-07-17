@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backlog_Details_Total__c</fullName>
+    <formula>pse__Time_Revenue__c +  pse__Unscheduled_Revenue__c +  pse__Held_Resource_Request_Revenue__c + pse__Unheld_Resource_Request_Revenue__c + pse__Milestone_Revenue__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Backlog Details Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

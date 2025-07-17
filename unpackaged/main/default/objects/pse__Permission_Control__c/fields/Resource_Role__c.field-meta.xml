@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Resource_Role__c</fullName>
+    <externalId>false</externalId>
+    <formula>TEXT(PSA_Resource_Contact__r.pse__Resource_Role__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Populated for BILLABLE Resources only; use with 'Job Profile'.
+Consultant, Engagement Consultant, Contractor = Consultant
+Principal Consultant = Principal Consultant
+Project Manager: Role = PM
+NonBillable PSA Licensed Users = update 'PSA User Role'.</inlineHelpText>
+    <label>Billable Resource Role</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounting_Report_Data_Uploaded__c</fullName>
+    <description>Date of upload of Total Accounting Backlog field</description>
+    <inlineHelpText>Date of upload of Total Accounting Backlog field</inlineHelpText>
+    <label>Accounting Report Data Uploaded</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>of_Budget__c</fullName>
+    <formula>IF( pse__Bookings__c = 0, 0, pse__Billings__c / pse__Bookings__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Reflects percent of Budget used to-date. Begins at 0% and increases as Time Cards are Approved for Billing or Revenue Recognition. [calculation = Billings divided by Bookings].</inlineHelpText>
+    <label>% of Budget</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

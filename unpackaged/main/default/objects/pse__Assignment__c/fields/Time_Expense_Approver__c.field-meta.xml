@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Time_Expense_Approver__c</fullName>
+    <externalId>false</externalId>
+    <formula>pse__Project__r.pse__Project_Manager__r.pse__Salesforce_User__r.FullName__c</formula>
+    <inlineHelpText>Formerly 'Project Manager' Field; see replacement 'PSA Project Manager' to identify PM/PC.
+Use this Field to identify User to receive/approve TC+Expense Notifications. 
+Biz Rule: Approver = PM if PM managed, otherwise Approver = Regional Delivery Mgr.</inlineHelpText>
+    <label>Time &amp; Expense Approver</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

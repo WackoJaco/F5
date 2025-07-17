@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>F5_Project_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>pse__Project_Manager__c</fields>
+    <fields>OwnerId</fields>
+    <fields>pse__Bookings__c</fields>
+    <fields>pse__Billed__c</fields>
+    <fields>Project_Backlog__c</fields>
+    <fields>pse__Region__c</fields>
+    <label>F5 - Project Compact Layout</label>
+</CompactLayout>

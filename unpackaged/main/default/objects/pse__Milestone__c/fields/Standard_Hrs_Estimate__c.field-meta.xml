@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Standard_Hrs_Estimate__c</fullName>
+    <description>8/19: M.Kim - renamed Label from Allocated Standard Hours to Standard Hrs: Estimate
+ADO 39187 - Change label from Standard Hours to Allocated Standard Hours</description>
+    <externalId>false</externalId>
+    <formula>Product_Name__r.Standard_Hours__c</formula>
+    <inlineHelpText>Consulting Hours allocated to Service Delivery during Business Hours: M-F 8am-6pm.</inlineHelpText>
+    <label>Standard Hrs: Estimate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Service_SKU__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <inlineHelpText>Please add the SKU that is being delivered against the sold product. Use for OASIS and SOW SKUs.</inlineHelpText>
+    <label>Delivery Service SKU</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Product2.Family</field>
+            <operation>equals</operation>
+            <value>Consulting, Training</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Product2</referenceTo>
+    <relationshipLabel>Milestones (Delivery Service SKU)</relationshipLabel>
+    <relationshipName>Milestones1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
