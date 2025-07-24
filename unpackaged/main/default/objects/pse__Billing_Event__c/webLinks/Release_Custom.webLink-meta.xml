@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Release_Custom</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Release</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT("/soap/ajax/32.0/connection.js")}
+
+var p = new sforce.SObject('pse__Billing_Event__c');
+p.id = "{!pse__Billing_Event__c.Id}";
+p.Stage__c = "Submitted to OR";
+p.pse__Is_Released__c = true;
+result = sforce.connection.update([p]); 
+
+if (result[0].getBoolean( "success" ) ) { 
+window.location.reload(); 
+} else { 
+alert(result[0].errors.message); 
+}</url>
+</WebLink>

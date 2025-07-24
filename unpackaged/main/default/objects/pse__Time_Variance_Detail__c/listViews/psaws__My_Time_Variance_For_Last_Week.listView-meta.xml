@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>psaws__My_Time_Variance_For_Last_Week</fullName>
+    <columns>NAME</columns>
+    <columns>pse__Allowed_Variance_Under__c</columns>
+    <columns>pse__Resource__c</columns>
+    <columns>pse__Work_Calendar_Hours__c</columns>
+    <columns>pse__Total_Hours__c</columns>
+    <columns>pse__Variance__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>pse__Start_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pse__End_Date__c</field>
+        <operation>equals</operation>
+        <value>LAST_N_WEEKS:4</value>
+    </filters>
+    <filters>
+        <field>psaws__Time_Variance_Difference__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>psaws__Is_Resource_Current_User__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Resource Time Variance for Last 4 Weeks</label>
+</ListView>
