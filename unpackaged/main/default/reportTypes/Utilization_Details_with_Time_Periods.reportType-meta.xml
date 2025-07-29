@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>pse__Time_Period__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Utilization Details with Time Periods</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>pse__Utilization_Details1__r</relationship>
+    </join>
+    <label>Utilization Details with Time Periods</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Currency</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>End Date</displayNameOverride>
+            <field>pse__End_Date__c</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Start Date</displayNameOverride>
+            <field>pse__Start_Date__c</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time Period ID</displayNameOverride>
+            <field>Id</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Time Period Name</displayNameOverride>
+            <field>Name</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>pse__Type__c</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date Marked as Closed for Forecasting</displayNameOverride>
+            <field>pse__Closed_For_Forecasting_Date_Time__c</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <masterLabel>Time Periods</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Currency</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Monthly Billable Utilization %</displayNameOverride>
+            <field>F5_Monthly_Billable_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Group</displayNameOverride>
+            <field>pse__Group__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Billable Hours</displayNameOverride>
+            <field>pse__Historical_Billable_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Calendar Hours</displayNameOverride>
+            <field>pse__Historical_Calendar_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Yearly Billable Utilization %</displayNameOverride>
+            <field>f5_Yearly_Billable_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Weekly Billable Utilization %</displayNameOverride>
+            <field>F5_Weekly_Billable_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Quarterly Billable Utilization %</displayNameOverride>
+            <field>f5_Quarterly_Billable_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Credited Hours</displayNameOverride>
+            <field>pse__Historical_Credited_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Weekly Productive Utilization %</displayNameOverride>
+            <field>f5_Weekly_Productive_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Quarterly Productive Utilization %</displayNameOverride>
+            <field>f5_Quarterly_Productive_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Monthly Productive Utilization %</displayNameOverride>
+            <field>f5_Monthly_Productive_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Closed for Forecasting</displayNameOverride>
+            <field>pse__Closed_For_Forecasting__c</field>
+            <table>pse__Time_Period__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>f5 Yearly Productive Utilization %</displayNameOverride>
+            <field>f5_Yearly_Productive_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical End Date</displayNameOverride>
+            <field>pse__Historical_End_Date__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Excluded Hours</displayNameOverride>
+            <field>pse__Historical_Excluded_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Non-Billable Hours</displayNameOverride>
+            <field>pse__Historical_Non_Billable_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Scheduled Billable Hours</displayNameOverride>
+            <field>pse__Hist_Sch_Billable_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Scheduled Credited Hours</displayNameOverride>
+            <field>pse__Hist_Sch_Credited_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Scheduled Excluded Hours</displayNameOverride>
+            <field>pse__Hist_Sch_Excluded_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Scheduled Held Hours</displayNameOverride>
+            <field>pse__Hist_Sch_Held_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Scheduled Non-Billable Hours</displayNameOverride>
+            <field>pse__Hist_Sch_Non_Billable_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Start Date</displayNameOverride>
+            <field>pse__Historical_Start_Date__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Utilization</displayNameOverride>
+            <field>pse__Historical_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Utilization (Billable Only)</displayNameOverride>
+            <field>pse__Historical_Utilization_Billable_Only__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Utilization Target</displayNameOverride>
+            <field>pse__Historical_Utilization_Target__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Utilization Target Attainment</displayNameOverride>
+            <field>pse__Historical_Utilization_Target_Attainment__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Historical Utilization Target Hours</displayNameOverride>
+            <field>pse__Historical_Utilization_Target_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Is Report Master</displayNameOverride>
+            <field>pse__Is_Report_Master__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Practice</displayNameOverride>
+            <field>pse__Practice__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Region</displayNameOverride>
+            <field>pse__Region__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resource</displayNameOverride>
+            <field>pse__Resource__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Billable Hours</displayNameOverride>
+            <field>pse__Scheduled_Billable_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Calendar Hours</displayNameOverride>
+            <field>pse__Scheduled_Calendar_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Credited Hours</displayNameOverride>
+            <field>pse__Scheduled_Credited_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled End Date</displayNameOverride>
+            <field>pse__Scheduled_End_Date__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Excluded Hours</displayNameOverride>
+            <field>pse__Scheduled_Excluded_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Held Hours</displayNameOverride>
+            <field>pse__Scheduled_Held_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Non-Billable Hours</displayNameOverride>
+            <field>pse__Scheduled_Non_Billable_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Start Date</displayNameOverride>
+            <field>pse__Scheduled_Start_Date__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Utilization</displayNameOverride>
+            <field>pse__Scheduled_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Utilization (Billable Only)</displayNameOverride>
+            <field>pse__Scheduled_Utilization_Billable_Only__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Utilization Target</displayNameOverride>
+            <field>pse__Scheduled_Utilization_Target__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Utilization Target Attainment</displayNameOverride>
+            <field>pse__Scheduled_Utilization_Target_Attainment__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Scheduled Utilization Target Hours</displayNameOverride>
+            <field>pse__Scheduled_Utilization_Target_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Template Key</displayNameOverride>
+            <field>pse__Template_Key__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Time Period Type</displayNameOverride>
+            <field>pse__Time_Period_Type__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Utilization</displayNameOverride>
+            <field>pse__Total_Utilization__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Total Utilization (Billable Only)</displayNameOverride>
+            <field>pse__Total_Utilization_Billable_Only__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Type</displayNameOverride>
+            <field>pse__Type__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Calculation</displayNameOverride>
+            <field>pse__Utilization_Calculation__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resource is Current User</displayNameOverride>
+            <field>Resource_is_Current_User__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Utilization Detail Id</displayNameOverride>
+            <field>Name</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail ID</displayNameOverride>
+            <field>Id</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Target</displayNameOverride>
+            <field>pse__Utilization_Target__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resource Role</displayNameOverride>
+            <field>Resource_Role__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Resource Region</displayNameOverride>
+            <field>Resource_Region__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Target Attainment</displayNameOverride>
+            <field>pse__Utilization_Target_Attainment__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Target Hours</displayNameOverride>
+            <field>pse__Utilization_Target_Hours__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Region (PSA Billable)</displayNameOverride>
+            <field>pse__Resource__c.pse__Region__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Practice (PSA Billable External)</displayNameOverride>
+            <field>pse__Resource__c.pse__Practice__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Resource Role (PSA Billable)</displayNameOverride>
+            <field>pse__Resource__c.pse__Resource_Role__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Group</displayNameOverride>
+            <field>pse__Resource__c.pse__Group__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Full Name</displayNameOverride>
+            <field>pse__Resource__c.Full_Name__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Work Calendar (PSA Billable) : Work Calendar Name</displayNameOverride>
+            <field>pse__Resource__c.pse__Work_Calendar__c.Name</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Region : Region Name</displayNameOverride>
+            <field>pse__Region__c.Name</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Region : Theater</displayNameOverride>
+            <field>pse__Region__c.Theater__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Country of Residence (PSA Billable)</displayNameOverride>
+            <field>pse__Resource__c.Country_of_Residence__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : First Name</displayNameOverride>
+            <field>pse__Resource__c.FirstName</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Last Name</displayNameOverride>
+            <field>pse__Resource__c.LastName</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Active PSA User (PSA All)</displayNameOverride>
+            <field>pse__Resource__c.pse__Is_Resource_Active__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Billable Resource (PSA Billable)</displayNameOverride>
+            <field>pse__Resource__c.Billable_Resource_PSABill__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Department (PSA All)</displayNameOverride>
+            <field>pse__Resource__c.Department_PSA__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : Business Unit (PSA All)</displayNameOverride>
+            <field>pse__Resource__c.Business_Unit_PSA__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : External Resource (PSA Billable)</displayNameOverride>
+            <field>pse__Resource__c.pse__External_Resource__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Utilization Detail : Resource : PSA User Role (PSA All)</displayNameOverride>
+            <field>pse__Resource__c.PSA_User_Role__c</field>
+            <table>pse__Time_Period__c.pse__Utilization_Details1__r</table>
+        </columns>
+        <masterLabel>Utilization Details</masterLabel>
+    </sections>
+</ReportType>
