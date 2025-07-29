@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>pse__Billing_Event__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Used for Billing and Expense exports</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>pse__Billing_Event_Items__r</relationship>
+    </join>
+    <label>PSA Billing Events with Line Items</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account</displayNameOverride>
+            <field>Account__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Approved</displayNameOverride>
+            <field>pse__Is_Approved__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Approver</displayNameOverride>
+            <field>pse__Approver__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Assigned To</displayNameOverride>
+            <field>Assigned_To__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Contact</displayNameOverride>
+            <field>pse__Billing_Contact__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event Batch</displayNameOverride>
+            <field>pse__Billing_Event_Batch__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event ID</displayNameOverride>
+            <field>Id</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By &lt;&gt; Assigned To</displayNameOverride>
+            <field>Created_By_Assigned_To__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Currency</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date</displayNameOverride>
+            <field>pse__Date__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event : Project : End Date</displayNameOverride>
+            <field>pse__Project__c.pse__End_Date__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Event Key</displayNameOverride>
+            <field>pse__Event_Key__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Hold Released</displayNameOverride>
+            <field>Hold_Released__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Invoice Date</displayNameOverride>
+            <field>pse__Invoice_Date__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Invoice Method</displayNameOverride>
+            <field>Invoice_Method__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Invoice Number</displayNameOverride>
+            <field>pse__Invoice_Number__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Invoiced</displayNameOverride>
+            <field>pse__Invoiced__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Name</displayNameOverride>
+            <field>Name</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Notes</displayNameOverride>
+            <field>Notes__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event : Project : PO Attached</displayNameOverride>
+            <field>pse__Project__c.PO_Attached__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event : Project : PO Number</displayNameOverride>
+            <field>pse__Project__c.PO_Number_to_F5__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Processed by OR</displayNameOverride>
+            <field>Processed_by_OR__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Project</displayNameOverride>
+            <field>pse__Project__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Project Group</displayNameOverride>
+            <field>Project_Group__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event : Project : Project ID</displayNameOverride>
+            <field>pse__Project__c.Id</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>PSA Version</displayNameOverride>
+            <field>PSA_Version__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Recognized</displayNameOverride>
+            <field>Recognized__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Region</displayNameOverride>
+            <field>PS_Consulting_Region__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Released</displayNameOverride>
+            <field>pse__Is_Released__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Revenue Recognition Date</displayNameOverride>
+            <field>Revenue_Recognition_Date__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Sales Order Number</displayNameOverride>
+            <field>Sales_Order_Number__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Skip Sync Check</displayNameOverride>
+            <field>pse__Skip_Sync_Check__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Stage</displayNameOverride>
+            <field>Stage__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event : Project : Stage</displayNameOverride>
+            <field>pse__Project__c.pse__Stage__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event : Project : Start Date</displayNameOverride>
+            <field>pse__Project__c.pse__Start_Date__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Status</displayNameOverride>
+            <field>pse__Status__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Summary Amount</displayNameOverride>
+            <field>pse__Summary_Amount__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Theater</displayNameOverride>
+            <field>Theater__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Validated by PS</displayNameOverride>
+            <field>Validated_by_PS__c</field>
+            <table>pse__Billing_Event__c</table>
+        </columns>
+        <masterLabel>Billing Events</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Amount</displayNameOverride>
+            <field>pse__Amount__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event</displayNameOverride>
+            <field>pse__Billing_Event__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event Batch</displayNameOverride>
+            <field>pse__Billing_Event_Batch__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event Calculation</displayNameOverride>
+            <field>pse__Billing_Event_Calculation__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Billing Event Item ID</displayNameOverride>
+            <field>Id</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Category</displayNameOverride>
+            <field>pse__Category__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Contract Type</displayNameOverride>
+            <field>Contract_Type__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Currency</displayNameOverride>
+            <field>CurrencyIsoCode</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Date</displayNameOverride>
+            <field>pse__Date__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Description</displayNameOverride>
+            <field>pse__Description__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Expense</displayNameOverride>
+            <field>pse__Expense__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Invoice Method</displayNameOverride>
+            <field>Invoice_Method__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Invoiced</displayNameOverride>
+            <field>pse__Invoiced__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Milestone</displayNameOverride>
+            <field>Milestone__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Milestone</displayNameOverride>
+            <field>pse__Milestone__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Miscellaneous Adjustment</displayNameOverride>
+            <field>pse__Miscellaneous_Adjustment__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Name</displayNameOverride>
+            <field>Name</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Object Id</displayNameOverride>
+            <field>pse__Object_Id__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Oracle Invoice Number</displayNameOverride>
+            <field>Oracle_Invoice_Number__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Owner</displayNameOverride>
+            <field>Owner</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Project</displayNameOverride>
+            <field>pse__Project__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Quantity</displayNameOverride>
+            <field>pse__Quantity__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rev Rec Method</displayNameOverride>
+            <field>Rev_Rec_Method__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rev Rec Rule</displayNameOverride>
+            <field>Rev_Rec_Rule__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rev Rec Trigger</displayNameOverride>
+            <field>Rev_Rec_Trigger__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Rev Rec Type</displayNameOverride>
+            <field>Rev_Rec_Type__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Revenue Expiration</displayNameOverride>
+            <field>Revenue_Expiration__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>SKU</displayNameOverride>
+            <field>SKU__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Subcategory</displayNameOverride>
+            <field>pse__Subcategory__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Summary</displayNameOverride>
+            <field>pse__Summary__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Timecard Split</displayNameOverride>
+            <field>pse__Timecard_Split__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Unit Price</displayNameOverride>
+            <field>pse__Unit_Price__c</field>
+            <table>pse__Billing_Event__c.pse__Billing_Event_Items__r</table>
+        </columns>
+        <masterLabel>Billing Event Items</masterLabel>
+    </sections>
+</ReportType>
