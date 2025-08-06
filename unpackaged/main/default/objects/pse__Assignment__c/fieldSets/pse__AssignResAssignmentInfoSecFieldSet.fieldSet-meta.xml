@@ -1,138 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>pse__CreateProjectFromOppAndTempProjColumns</fullName>
+    <fullName>pse__AssignResAssignmentInfoSecFieldSet</fullName>
     <availableFields>
-        <field>pse__Actuals_Last_Update_Date__c</field>
+        <field>pse__Action_Refresh_EVA_Hours_From_Timecards__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Actuals_Last_Updated_By__c</field>
+        <field>pse__Action_Refresh_Hours_From_Schedule__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Actuals_Need_Recalc__c</field>
+        <field>pse__Assignment_Daily_Notes_Last_Updated__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Alert_Threshold__c</field>
+        <field>pse__Assignment_Daily_Notes__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Allow_Expenses_Without_Assignment__c</field>
+        <field>pse__Average_Cost_Rate_Currency_Code__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Allow_Self_Staffing__c</field>
+        <field>pse__Average_Cost_Rate_Number__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Allow_Timecards_Without_Assignment__c</field>
+        <field>pse__Bill_Rate_Card__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Apply_Billing_Cap__c</field>
+        <field>pse__Bill_Rate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Auto_Cap_Project_Billing__c</field>
+        <field>pse__Billable_Amount_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Backlog_Last_Update_Date__c</field>
+        <field>pse__Billable_Amount_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Backlog_Last_Updated_By__c</field>
+        <field>pse__Billable_Days_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Batch_Sequence__c</field>
+        <field>pse__Billable_Days_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Bill_To_Budget_Cap_Bulk_Release__c</field>
+        <field>pse__Billable_Expenses_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Billable_Expense_Fee_Flat__c</field>
+        <field>pse__Billable_Expenses_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Billable_Expense_Fee_Percentage__c</field>
+        <field>pse__Billable_Hours_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Billable_External_Hours__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billable_Internal_Hours__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billed__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billing_Eligible_Budgets__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billing_Eligible_Expenses__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billing_Eligible_Last_Updated__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billing_Eligible_Milestones__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billing_Eligible_Misc_Adjustments__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billing_Eligible_Timecard_Splits__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billing_Type__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Billings__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Bookings__c</field>
+        <field>pse__Billable_Hours_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -147,17 +92,42 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Credited_Non_Billable_Internal_Hours__c</field>
+        <field>pse__Cost_Rate_Amount__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Current_Time_Period_End_Date__c</field>
+        <field>pse__Cost_Rate_Currency_Code__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Current_Time_Period__c</field>
+        <field>pse__Cost_Rate__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>CreatedById</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>CreatedDate</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>CurrencyIsoCode</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Daily_Bill_Rate__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Daily_Cost_Rate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -167,52 +137,22 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Email_Alert_Recipient__c</field>
+        <field>pse__Description__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Exclude_From_Billing__c</field>
+        <field>pse__Estimated_Time_To_Completion__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Exclude_from_Backlog__c</field>
+        <field>pse__Exclude_from_Billing__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Exclude_from_Project_Planner__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Excluded_Hours__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Expense_Budget__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Expense_Costs__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Expense_Notes__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__External_Costs__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Hierarchy_Depth__c</field>
+        <field>pse__Exclude_from_Planners__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -222,57 +162,12 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Inactive_Project_Backlog__c</field>
+        <field>IsDeleted</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Include_In_Forecasting__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Internal_Budget__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Internal_Costs__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Invoiced__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Is_Template__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Jira_Correlation_ID__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Jira_Project_Key__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Jira_Project_Type__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Jira_Project_URL__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Jira_Project__c</field>
+        <field>pse__Is_Billable__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -282,157 +177,202 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Master_Project__c</field>
+        <field>Name</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Non_Billable_External_Hours__c</field>
+        <field>pse__Nick_Name__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Non_Billable_Internal_Hours__c</field>
+        <field>pse__Non_Billable_Days_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Notes__c</field>
+        <field>pse__Non_Billable_Days_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Opportunity_Owner__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>true</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Other_Costs__c</field>
+        <field>pse__Non_Billable_Expenses_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Parent_Project__c</field>
+        <field>pse__Non_Billable_Expenses_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Pass_Through_Billings__c</field>
+        <field>pse__Non_Billable_Hours_In_Financials__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Non_Billable_Hours_Submitted__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Expense_Group__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Expense_Practice__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Expense_Region__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_RPG_Audit_Notes__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_RPG_Enabled__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Timecard_Cost_Group__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Timecard_Cost_Practice__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Timecard_Cost_Region__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Timecard_Revenue_Group__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Timecard_Revenue_Practice__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Override_Timecard_Revenue_Region__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>OwnerId</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Percent_Allocated__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Planned_Bill_Rate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
         <field>pse__Planned_Hours__c</field>
         <isFieldManaged>false</isFieldManaged>
-        <isRequired>true</isRequired>
+        <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Practice__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>true</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Pre_Bill_Type__c</field>
+        <field>pse__Project_Task_Hours__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Pre_Billed__c</field>
+        <field>pse__Project__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Project_ID_Chain__c</field>
+        <field>pse__Projected_Revenue__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Project_Name_Chain__c</field>
+        <field>pse__Rate_Card__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Project_Phase__c</field>
+        <field>pse__Resource_Cost_Rate_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Project_Status_Notes__c</field>
+        <field>pse__Resource_Request__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Project_Type__c</field>
+        <field>pse__Resource__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Rate_Card_Discount_Limit__c</field>
+        <field>pse__Role__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Rate_Card_Percentage_Discount__c</field>
+        <field>pse__Schedule_Updated__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Rate_Card_Set__c</field>
+        <field>pse__Schedule__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Revenue__c</field>
+        <field>pse__Show_Assignment_Methodologies_Only__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Scheduled_Backlog_Calculated_Date__c</field>
+        <field>pse__Show_Assignment_Milestones_Only__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Scheduled_Backlog_End_Date__c</field>
+        <field>pse__Show_Assignment_Phases_Only__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Scheduled_Milestone__c</field>
+        <field>pse__Status__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Scheduled_Time__c</field>
+        <field>pse__Suggested_Bill_Rate_Currency_Code__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Services_Billing_Time_Period_Type__c</field>
+        <field>pse__Suggested_Bill_Rate_Number__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Share_with_Project_Manager__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Share_with_Project_Resources__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Sync_With_Jira__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Tasks_Total_Points_Complete__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
-        <field>pse__Tasks_Total_Points__c</field>
+        <field>pse__Suggested_Bill_Rate__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
@@ -447,100 +387,55 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Total_Assigned_Hours__c</field>
+        <field>pse__Timecard_External_Costs_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Total_Number_of_Tasks__c</field>
+        <field>pse__Timecard_External_Costs_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Total_Projected_Revenue_From_Assignments__c</field>
+        <field>pse__Timecard_Internal_Costs_In_Financials__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Unscheduled_Backlog__c</field>
+        <field>pse__Timecard_Internal_Costs_Submitted__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </availableFields>
-    <description>Used on both the CreateProjectFromOpportunity and CreateProjectFromTemplate Visualforce pages. Defines the editable fields that appear on the Project Details sections of these pages.</description>
+    <availableFields>
+        <field>pse__Use_Dated_Resource_Bill_Rates__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Use_Project_Currency_For_Resource_Cost__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Use_Resource_Currency_For_Resource_Cost__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Use_Resource_Default_Cost_Rate__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>pse__Use_Resource_Default_Cost_Rate_as_Daily__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <description>Used to define the additional custom fields visible for the Assign Resource to Project feature on a project's record page, and the Create Assignment feature on Work Planner.</description>
     <displayedFields>
-        <field>CurrencyIsoCode</field>
+        <field>pse__Milestone__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
     </displayedFields>
-    <displayedFields>
-        <field>Name</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>true</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Account__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Opportunity__c</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>true</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Start_Date__c</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>true</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Region__c</field>
-        <isFieldManaged>true</isFieldManaged>
-        <isRequired>true</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Group__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__End_Date__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>true</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Project_Manager__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>OwnerId</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>true</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Is_Active__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Is_Billable__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Project_Status__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Stage__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <displayedFields>
-        <field>pse__Copy_Child_Records_from_Template_Async__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </displayedFields>
-    <label>Create Project From Opp And Template Project Columns</label>
+    <label>Assign Resource To Project Custom Fields</label>
 </FieldSet>

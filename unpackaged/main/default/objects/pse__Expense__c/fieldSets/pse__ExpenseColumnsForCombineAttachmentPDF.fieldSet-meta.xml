@@ -5162,11 +5162,6 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
-        <field>pse__Expense_Split_Parent__r.pse__Synchronous_Update_Required__c</field>
-        <isFieldManaged>false</isFieldManaged>
-        <isRequired>false</isRequired>
-    </availableFields>
-    <availableFields>
         <field>pse__Milestone__r.pse__Target_Date__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>
