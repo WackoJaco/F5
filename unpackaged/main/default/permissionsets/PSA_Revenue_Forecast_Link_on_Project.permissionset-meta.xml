@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows the Project level revenue forecast link to display</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSA Revenue Forecast Link on Project</label>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>PSA_Project_Run_Revenue_Forecast</name>
+    </customPermissions>
+</PermissionSet>

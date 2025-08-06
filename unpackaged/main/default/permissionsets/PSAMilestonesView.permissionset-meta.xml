@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission to view the Milestone Template checkbox</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>PSA - Milestone: View</label>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>pse__Milestone__c.MilestoneTemplate__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+</PermissionSet>
