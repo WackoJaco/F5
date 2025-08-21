@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Mobile App for PSA users</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Mobile (PSA)</label>
+    <navType>Standard</navType>
+    <tabs>Enter_Time1</tabs>
+    <tabs>Weekly_Summary1</tabs>
+    <tabs>Enter_Expense1</tabs>
+    <tabs>Work_Opportunity_Hub1</tabs>
+    <tabs>pse__Manage_Skills_And_Certifications</tabs>
+    <tabs>pse__Timecards_To_Approve</tabs>
+    <tabs>pse__Expense_Reports_To_Approve</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Mobile_PSA_UtilityBar</utilityBar>
+</CustomApplication>

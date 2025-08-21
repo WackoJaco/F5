@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>pse__Timecard_Header__c</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>External Consultant (PSA)</label>
+    <tabs>pse__Timecard_Header__c</tabs>
+    <tabs>pse__Proj__c</tabs>
+    <tabs>pse__Assignment__c</tabs>
+    <tabs>pse__Expense_Report__c</tabs>
+    <tabs>pse__Self_Assignment</tabs>
+    <tabs>standard-Contact</tabs>
+</CustomApplication>

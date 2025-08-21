@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlexiPage xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Enter Expense for Custom PSA Mobile</description>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>editableFieldSetApiName</name>
+                    <value>ExpenseHeaderRowEditableColumns</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>editableNotesFieldSetApiName</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isAssignmentAllowed</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>isMilestoneAllowed</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>readOnlyFieldSetApiName</name>
+                    <value>ExpenseHeaderRowReadOnlyColumns</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>readOnlyNotesFieldSetApiName</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showBillableInformation</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showReimbursementInformation</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>pse:em_expenseEntry</componentName>
+                <identifier>pse_em_expenseEntry</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!$Client.formFactor}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>Small</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <name>main</name>
+        <type>Region</type>
+    </flexiPageRegions>
+    <masterLabel>Enter Expense</masterLabel>
+    <template>
+        <name>flexipage:defaultAppHomeTemplate</name>
+    </template>
+    <type>AppPage</type>
+</FlexiPage>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>f5logorgb5</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>FinancialForce PSA LEX App for Revenue Accounting (AR), Revenue Ops (OR), and Credit (OV).</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Revenue Acct (PSA)</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Export_List_Views</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>pse__Billing_Event__c</tabs>
+    <tabs>pse__Timecard_Header__c</tabs>
+    <tabs>pse__Expense_Report__c</tabs>
+    <tabs>pse__Proj__c</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

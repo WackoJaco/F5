@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>f5logorgb3</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>FinancialForce PSA LEX App for Professional Services Sales and Consulting Leadership.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Senior Leadership (PSA)</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Project_Management_Workspace_New</tabs>
+    <tabs>Export_List_Views</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>psaws__resource_manager_workspace</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>standard-Product2</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>pse__Resource_Request__c</tabs>
+    <tabs>pse__Proj__c</tabs>
+    <tabs>pse__Billing_Event__c</tabs>
+    <tabs>pse__Resource_Planner</tabs>
+    <tabs>pse__Project_Planner</tabs>
+    <tabs>SOW__c</tabs>
+    <tabs>pse__Approve_Multiple_Timecards</tabs>
+    <tabs>pse__Approve_Multiple_Expense_Reports</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>
